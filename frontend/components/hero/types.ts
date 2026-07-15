@@ -12,6 +12,10 @@ export interface HeroData {
   name: string;
   role: string;
   description: string;
+  image?: {
+    src: string;
+    alt: string;
+  };
   primaryCta: {
     label: string;
     href: string;

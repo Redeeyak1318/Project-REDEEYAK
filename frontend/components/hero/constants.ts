@@ -8,6 +8,10 @@ export const HERO_DATA: HeroData = {
   name: "Redeeyak",
   role: "",
   description: "",
+  image: {
+    src: "/hero_profile_image.png",
+    alt: "Developer Profile",
+  },
   primaryCta: {
     label: "View Projects",
     href: "#projects",
