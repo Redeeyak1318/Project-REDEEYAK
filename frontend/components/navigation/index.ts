@@ -3,4 +3,4 @@ export { Logo } from "./Logo";
 export { NavLinks } from "./NavLinks";
 export { ThemeToggle } from "./ThemeToggle";
 export { MobileMenu } from "./MobileMenu";
-export { navigationItems, type NavItem } from "./config";
+export { navigationItems, type NavigationItem } from "./config";
