@@ -21,6 +21,7 @@ export const HeroImage = ({ className, ...props }: HeroImageProps) => {
         src={image.src}
         alt={image.alt}
         fill
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 40vw"
         className="object-cover"
         priority
       />

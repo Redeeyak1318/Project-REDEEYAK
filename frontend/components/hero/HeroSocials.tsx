@@ -1,7 +1,8 @@
+import * as React from "react";
 import { HERO_DATA } from "./constants";
 import { cn } from "@/lib/utils";
 
-export interface HeroSocialsProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface HeroSocialsProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 export const HeroSocials = ({ className, ...props }: HeroSocialsProps) => {
   const { socials } = HERO_DATA;
@@ -18,7 +19,7 @@ export const HeroSocials = ({ className, ...props }: HeroSocialsProps) => {
         }
 
         const Icon = social.icon;
-        
+
         return (
           <a
             key={social.label}

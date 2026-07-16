@@ -1,3 +1,4 @@
+import * as React from "react";
 import { Container } from "@/components/layout";
 import { HeroContent } from "./HeroContent";
 import { HeroImage } from "./HeroImage";
