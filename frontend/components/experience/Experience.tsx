@@ -1,6 +1,8 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout";
+import { ExperienceHeader } from "./ExperienceHeader";
+import { ExperienceTimeline } from "./ExperienceTimeline";
 
 export interface ExperienceProps extends React.HTMLAttributes<HTMLElement> {}
 
@@ -12,7 +14,10 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
       {...props}
     >
       <Container>
-        {/* TODO: Compose Experience section */}
+        <div className="flex flex-col gap-12 lg:gap-16">
+          <ExperienceHeader />
+          <ExperienceTimeline />
+        </div>
       </Container>
     </section>
   );
