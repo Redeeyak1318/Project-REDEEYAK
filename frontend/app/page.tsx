@@ -1,7 +1,10 @@
+import { Hero } from "@/components/hero";
+
 export default function Home() {
+
   return (
     <main>
-      <h1>Project REDEEYAK</h1>
+      <Hero />
     </main>
   );
 }
