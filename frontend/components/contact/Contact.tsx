@@ -17,6 +17,7 @@ export const Contact = ({
     return (
         <section
             id="contact"
+            aria-labelledby="contact-heading"
             className={cn("py-16 lg:py-28", className)}
             {...props}
         >

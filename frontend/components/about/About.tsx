@@ -13,6 +13,7 @@ export const About = ({ className, ...props }: AboutProps) => {
   return (
     <section
       id="about"
+      aria-labelledby="about-heading"
       className={cn(
         "py-16 lg:py-28",
         className

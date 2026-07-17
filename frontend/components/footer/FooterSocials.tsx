@@ -33,7 +33,7 @@ export const FooterSocials = ({
                         rel="noopener noreferrer"
                         className="rounded-md p-2 text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                     >
-                        <Icon className="h-5 w-5" />
+                        <Icon className="h-5 w-5" aria-hidden="true" />
                     </Link>
                 );
             })}

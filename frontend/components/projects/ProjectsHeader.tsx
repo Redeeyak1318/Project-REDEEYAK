@@ -12,7 +12,7 @@ export const ProjectsHeader = ({ className, ...props }: ProjectsHeaderProps) => 
       className={cn("flex flex-col items-center gap-4 text-center", className)}
       {...props}
     >
-      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+      <h2 id="projects-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
         {title}
       </h2>
       <p className="max-w-2xl text-lg sm:text-xl text-muted-foreground">

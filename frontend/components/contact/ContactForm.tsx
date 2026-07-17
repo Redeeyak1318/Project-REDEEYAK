@@ -28,6 +28,7 @@ export const ContactForm = ({
 
                         <Input
                             id="name"
+                            autoComplete="name"
                             placeholder="Your name"
                         />
                     </div>
@@ -40,6 +41,7 @@ export const ContactForm = ({
                         <Input
                             id="email"
                             type="email"
+                            autoComplete="email"
                             placeholder="you@example.com"
                         />
                     </div>
@@ -64,6 +66,7 @@ export const ContactForm = ({
                     <Textarea
                         id="message"
                         rows={6}
+                        autoComplete="off"
                         placeholder="Write your message..."
                     />
                 </div>
@@ -72,8 +75,11 @@ export const ContactForm = ({
                     type="button"
                     className="w-full"
                     disabled
+                    aria-disabled="true"
                 >
                     Contact Form Coming Soon
+
+                    In the meantime, feel free to reach out via email or LinkedIn.
                 </Button>
             </form>
         </div>

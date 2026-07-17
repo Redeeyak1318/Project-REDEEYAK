@@ -17,7 +17,7 @@ export const SkillsHeader = ({ className, ...props }: SkillsHeaderProps) => {
       {...props}
     >
       {title && (
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+        <h2 id="skills-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
           {title}
         </h2>
       )}

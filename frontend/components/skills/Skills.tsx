@@ -11,6 +11,7 @@ export const Skills = ({ className, ...props }: SkillsProps) => {
   return (
     <section
       id="skills"
+      aria-labelledby="skills-heading"
       className={cn("py-16 lg:py-28", className)}
       {...props}
     >

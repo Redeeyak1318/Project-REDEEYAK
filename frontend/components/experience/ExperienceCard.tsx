@@ -62,7 +62,8 @@ export const ExperienceCard = ({ experience, className, ...props }: ExperienceCa
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-sm font-medium text-primary hover:underline"
+            aria-label={`Visit ${organization}`}
+            className="text-sm font-medium text-primary hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
           >
             Visit Organization
           </a>

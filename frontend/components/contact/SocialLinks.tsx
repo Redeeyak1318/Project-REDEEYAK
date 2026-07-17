@@ -13,9 +13,10 @@ export const SocialLinks = () => {
                         href={item.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="rounded-full border p-3 transition-colors hover:bg-accent"
+                        aria-label={item.name}
+                        className="rounded-full border p-3 transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
                     >
-                        <Icon className="h-5 w-5" />
+                        <Icon className="h-5 w-5" aria-hidden="true" />
                     </Link>
                 );
             })}

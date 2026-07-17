@@ -17,7 +17,7 @@ export const AboutContent = ({ className, ...props }: AboutContentProps) => {
         )} {...props}>
             <header className="flex flex-col gap-4">
                 {title ? (
-                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+                    <h2 id="about-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
                         {title}
                     </h2>
                 ) : null}

@@ -29,7 +29,7 @@ export const HeroSocials = ({ className, ...props }: HeroSocialsProps) => {
             aria-label={social.label}
             className="inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
           >
-            <Icon className="h-5 w-5" />
+            <Icon className="h-5 w-5" aria-hidden="true" />
           </a>
         );
       })}

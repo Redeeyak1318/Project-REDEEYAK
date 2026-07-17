@@ -24,7 +24,7 @@ export const FooterNavigation = ({
                     <li key={item.href}>
                         <Link
                             href={item.href}
-                            className="text-sm text-muted-foreground transition-colors hover:text-primary"
+                            className="text-sm text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring rounded-sm px-1"
                         >
                             {item.label}
                         </Link>

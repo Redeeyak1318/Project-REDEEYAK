@@ -24,7 +24,7 @@ export const ContactHeader = ({
                 {badge}
             </span>
 
-            <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h2 id="contact-heading" className="text-4xl md:text-5xl font-bold tracking-tight">
                 {title}
             </h2>
 

@@ -13,7 +13,7 @@ export const Logo = ({
   return (
     <Link
       href={href}
-      className={cn("text-xl font-bold tracking-tight hover:opacity-80 transition-opacity", className)}
+      className={cn("text-xl font-bold tracking-tight hover:opacity-80 transition-opacity rounded-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2", className)}
       aria-label="Home"
     >
       Project REDEEYAK

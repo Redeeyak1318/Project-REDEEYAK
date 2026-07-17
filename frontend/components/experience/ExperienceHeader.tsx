@@ -17,7 +17,7 @@ export const ExperienceHeader = ({ className, ...props }: ExperienceHeaderProps)
       {...props}
     >
       {title && (
-        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
+        <h2 id="experience-heading" className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-foreground">
           {title}
         </h2>
       )}

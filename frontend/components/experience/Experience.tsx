@@ -10,6 +10,7 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
   return (
     <section
       id="experience"
+      aria-labelledby="experience-heading"
       className={cn("py-16 lg:py-28", className)}
       {...props}
     >

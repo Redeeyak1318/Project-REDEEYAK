@@ -23,7 +23,7 @@ export const FooterBrand = ({
         >
             <Link
                 href="#hero"
-                className="text-2xl font-bold tracking-tight transition-colors hover:text-primary"
+                className="text-2xl font-bold tracking-tight transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-sm"
             >
                 {brand.name}
             </Link>
