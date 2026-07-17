@@ -1,4 +1,5 @@
 import * as React from "react";
+import { siteConfig } from "@/lib/site-config";
 
 import { cn } from "@/lib/utils";
 
@@ -19,10 +20,10 @@ export const FooterCopyright = ({
             )}
             {...props}
         >
-            © {currentYear} REDEEYAK. All rights reserved.
+            © {currentYear} {siteConfig.name}. All rights reserved.
             <span className="hidden sm:inline">
                 {" "}
-                Built with Next.js, React & Tailwind CSS.
+                Built with {siteConfig.name}.
             </span>
         </p>
     );

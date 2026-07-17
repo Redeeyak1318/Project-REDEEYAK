@@ -1,3 +1,6 @@
+import { siteConfig } from "@/lib/site-config";
+import { socialLinks } from "@/lib/social-links";
+import { navigationItems } from "@/components/navigation/config";
 import {
     FaGithub,
     FaLinkedin,
@@ -9,39 +12,30 @@ import { FooterData } from "./types";
 
 export const FOOTER_DATA: FooterData = {
     brand: {
-        name: "REDEEYAK",
-        tagline:
-            "Building thoughtful digital experiences through clean code, scalable architecture, and modern web technologies.",
+        name: siteConfig.name,
+        tagline: siteConfig.description,
     },
-
-    navigation: [
-        { label: "Home", href: "#hero" },
-        { label: "About", href: "#about" },
-        { label: "Skills", href: "#skills" },
-        { label: "Experience", href: "#experience" },
-        { label: "Projects", href: "#projects" },
-        { label: "Contact", href: "#contact" },
-    ],
+    navigation: [...navigationItems],
 
     socials: [
         {
             label: "GitHub",
-            href: "https://github.com/REDEEYAK",
+            href: socialLinks.github,
             icon: FaGithub,
         },
         {
             label: "LinkedIn",
-            href: "YOUR_LINKEDIN_URL",
+            href: socialLinks.linkedin,
             icon: FaLinkedin,
         },
         {
             label: "X",
-            href: "YOUR_X_URL",
+            href: socialLinks.x,
             icon: FaXTwitter,
         },
         {
             label: "Email",
-            href: "mailto:YOUR_EMAIL",
+            href: `mailto:${socialLinks.email}`,
             icon: FaEnvelope,
         },
     ],
