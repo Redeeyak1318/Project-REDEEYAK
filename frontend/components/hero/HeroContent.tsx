@@ -18,6 +18,11 @@ export const HeroContent = ({ className, ...props }: HeroContentProps) => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-extrabold tracking-tighter text-foreground">
             {HERO_DATA.name}
           </h1>
+          {HERO_DATA.branding ? (
+            <p className="text-xl sm:text-2xl font-medium text-muted-foreground mt-2">
+              {HERO_DATA.branding}
+            </p>
+          ) : null}
         </div>
 
         {HERO_DATA.role ? (

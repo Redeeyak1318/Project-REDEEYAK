@@ -15,7 +15,7 @@ export const ExperienceCard = ({ experience, className, ...props }: ExperienceCa
 
   return (
     <div
-      className={cn("flex flex-col gap-6 rounded-xl border bg-card p-6", className)}
+      className={cn("flex flex-col gap-6 rounded-xl border bg-card p-5 sm:p-6", className)}
       {...props}
     >
       <div className="flex flex-col gap-1">

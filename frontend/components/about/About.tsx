@@ -14,7 +14,7 @@ export const About = ({ className, ...props }: AboutProps) => {
     <section
       id="about"
       className={cn(
-        "py-20 lg:py-28",
+        "py-16 lg:py-28",
         className
       )}
       {...props}

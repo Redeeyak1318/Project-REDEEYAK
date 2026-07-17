@@ -17,7 +17,7 @@ export const Contact = ({
     return (
         <section
             id="contact"
-            className={cn("py-24", className)}
+            className={cn("py-16 lg:py-28", className)}
             {...props}
         >
             <Container>

@@ -11,7 +11,7 @@ export const Skills = ({ className, ...props }: SkillsProps) => {
   return (
     <section
       id="skills"
-      className={cn("py-20 lg:py-28", className)}
+      className={cn("py-16 lg:py-28", className)}
       {...props}
     >
       <Container>

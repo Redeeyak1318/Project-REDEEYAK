@@ -2,11 +2,10 @@ import { AboutData } from "./types";
 
 export const ABOUT_DATA: AboutData = {
   title: "About Me",
-  subtitle: "Computer Science student passionate about full-stack development, AI, and research.",
+  subtitle: "Exploring software engineering, AI, and research through impactful projects.",
   description: [
-    "I'm a Computer Science undergraduate at Dibrugarh University Institute of Engineering and Technology (DUIET), passionate about full-stack web development, software engineering, and creating intuitive digital experiences.",
-
-    "Alongside my B.Tech, I'm pursuing the IIT Madras BS Degree in Data Science and Applications. I enjoy building scalable projects, exploring AI, conducting research, and continuously learning modern technologies."
+    "I am a Computer Science student with a strong interest in software engineering, full-stack development, artificial intelligence, and research. I enjoy designing scalable applications, exploring emerging technologies, and approaching every project with curiosity and attention to detail.",
+    "Whether I'm building modern web applications or contributing to research, I strive to create solutions that are technically robust, user-focused, and meaningful."
   ],
   image: {
     src: "/about_profile_image.png",
@@ -14,16 +13,16 @@ export const ABOUT_DATA: AboutData = {
   },
   stats: [
     {
-      label: "Projects",
-      value: "3+",
+      label: "Specialization",
+      value: "Full-Stack",
     },
     {
-      label: "Technologies",
-      value: "10+",
+      label: "Research",
+      value: "AI & Software",
     },
     {
-      label: "Learning",
-      value: "Daily",
+      label: "Mindset",
+      value: "Continuous Learning",
     },
   ]
 };

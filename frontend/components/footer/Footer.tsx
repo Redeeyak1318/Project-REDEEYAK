@@ -18,7 +18,7 @@ export const Footer = ({
     return (
         <footer
             className={cn(
-                "border-t bg-background py-12",
+                "border-t bg-background py-8 md:py-12",
                 className
             )}
             {...props}

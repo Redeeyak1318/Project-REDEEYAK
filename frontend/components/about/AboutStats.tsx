@@ -12,7 +12,7 @@ export const AboutStats = ({ className, ...props }: AboutStatsProps) => {
     }
 
     return (
-        <div className={cn("grid grid-cols-3 gap-6", className)} {...props}>
+        <div className={cn("grid grid-cols-1 sm:grid-cols-3 gap-6", className)} {...props}>
             {stats.map((stat) => (
                 <div
                     key={stat.label}

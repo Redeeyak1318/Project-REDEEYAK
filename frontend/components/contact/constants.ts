@@ -1,29 +1,22 @@
 import {
     Mail,
-    Phone,
     MapPin,
 } from "lucide-react";
 
 import {
     FaGithub,
     FaLinkedin,
-    FaInstagram,
 } from "react-icons/fa6";
 
 import type { ContactInfoItem, SocialLink } from "./types";
+import { socialLinks } from "@/lib/social-links";
 
 export const CONTACT_INFO: ContactInfoItem[] = [
     {
         icon: Mail,
         label: "Email",
-        value: "raktimsonowal@example.com",
-        href: "mailto:raktimsonowal@example.com",
-    },
-    {
-        icon: Phone,
-        label: "Phone",
-        value: "+91 XXXXX XXXXX",
-        href: "tel:+91XXXXXXXXXX",
+        value: socialLinks.email,
+        href: `mailto:${socialLinks.email}`,
     },
     {
         icon: MapPin,
@@ -36,24 +29,19 @@ export const CONTACT_INFO: ContactInfoItem[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
     {
         name: "GitHub",
-        href: "https://github.com/REDEEYAK",
+        href: socialLinks.github,
         icon: FaGithub,
     },
     {
         name: "LinkedIn",
-        href: "https://linkedin.com/in/your-profile",
+        href: socialLinks.linkedin,
         icon: FaLinkedin,
-    },
-    {
-        name: "Instagram",
-        href: "https://instagram.com/your-profile",
-        icon: FaInstagram,
     },
 ];
 
 export const CONTACT_DATA = {
-    badge: "Let's Connect",
-    title: "Get in Touch",
+    badge: "Contact",
+    title: "Let's Connect",
     description:
-        "Have an idea, project, or opportunity? Feel free to reach out. I'll get back to you as soon as possible.",
+        "I'm always open to discussing software development, research collaborations, internships, and exciting opportunities. The contact form is currently under development, so feel free to reach out via email or LinkedIn.",
 };

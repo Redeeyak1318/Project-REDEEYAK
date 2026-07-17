@@ -2,29 +2,44 @@ import { ExperienceData } from "./types";
 
 export const EXPERIENCE_DATA: ExperienceData = {
   title: "Experience",
-  subtitle: "My professional journey",
+  subtitle: "Building experience through projects, research, and real-world collaboration.",
   experiences: [
     {
-      organization: "EUREEKA Education and Services",
-      role: "Intern",
-      duration: "July 6, 2026 – July 13, 2026",
-      location: "Amguri, Assam, India",
+      organization: "Project REDEEYAK",
+      role: "Project Lead & Full-Stack Developer",
+      duration: "2026 – Present",
       description: [
-        "Participated in technical training and organizational orientation.",
-        "Conducted market survey and field research on digital adoption among local businesses.",
-        "Designed promotional posters and awareness materials for multiple divisions.",
-        "Created educational and promotional video content.",
-        "Visited the Amguri Head Branch to understand organizational workflows and operations."
+        "Designed a modular component-based architecture using Next.js and React.",
+        "Built reusable UI components with TypeScript and Tailwind CSS.",
+        "Deployed and maintained the portfolio using Vercel."
+      ],
+      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"]
+    },
+    {
+      organization: "EUREEKA Education & Services",
+      role: "Software & Digital Marketing Intern",
+      duration: "July 2026",
+      description: [
+        "Conducted field surveys and market research.",
+        "Designed digital promotional content.",
+        "Contributed to educational outreach initiatives."
+      ],
+      technologies: ["Market Research", "Digital Marketing", "Content Design"]
+    },
+    {
+      organization: "Independent Academic Research",
+      role: "Undergraduate Research",
+      duration: "2026",
+      description: [
+        "Conducted literature review and thematic analysis.",
+        "Explored mathematical applications in AI and software engineering.",
+        "Improved research manuscripts through peer-review revisions."
       ],
       technologies: [
-        "Canva",
-        "Adobe Express",
-        "Microsoft PowerPoint",
-        "Microsoft Word",
-        "Social Media Marketing",
-        "Market Research"
-      ],
-      link: "https://eureekainstitute.com"
-    },
+        "Literature Review",
+        "Mathematical Modeling",
+        "Scientific Writing"
+      ]
+    }
   ],
 };

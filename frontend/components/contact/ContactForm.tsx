@@ -19,7 +19,7 @@ export const ContactForm = ({
             )}
             {...props}
         >
-            {<form className="space-y-6">
+            <form className="space-y-6">
                 <div className="grid gap-6 md:grid-cols-2">
                     <div className="space-y-2">
                         <label htmlFor="name" className="text-sm font-medium">
@@ -69,12 +69,13 @@ export const ContactForm = ({
                 </div>
 
                 <Button
-                    type="submit"
+                    type="button"
                     className="w-full"
+                    disabled
                 >
-                    Send Message
+                    Contact Form Coming Soon
                 </Button>
-            </form>}
+            </form>
         </div>
     );
 };

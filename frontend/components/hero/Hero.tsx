@@ -16,7 +16,7 @@ export const Hero = ({
       id="home"
       {...props}
       className={cn(
-        "relative min-h-[calc(100vh-4rem)] flex flex-col justify-center pt-16 pb-24 lg:pt-24 lg:pb-32",
+        "relative min-h-[calc(100vh-4rem)] flex flex-col justify-center pt-12 pb-16 lg:pt-24 lg:pb-32",
         className
       )}
       aria-label="Introduction"

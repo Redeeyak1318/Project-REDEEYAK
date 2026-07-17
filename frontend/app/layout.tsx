@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Project REDEEYAK",
-    template: "%s | Project REDEEYAK",
+    default: "Raktim Sonowal | Project REDEEYAK",
+    template: "%s | Raktim Sonowal",
   },
   description:
-    "Personal digital workspace of Raktim Sonowal showcasing projects, research, and engineering journey.",
+    "Portfolio of Raktim Sonowal, a Computer Science student passionate about full-stack development, software architecture, artificial intelligence, and research.",
 };
 
 export default function RootLayout({

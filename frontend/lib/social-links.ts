@@ -1,17 +1,17 @@
 export const socialLinks = {
     github: "https://github.com/Redeeyak1318",
 
-    linkedin: "",
+    linkedin: "https://www.linkedin.com/in/raktim-sonowal-m1318/",
 
     x: "",
 
-    email: "",
+    email: "raktimsonowal28197@gmail.com",
 
-    instagram: "",
+    instagram: "https://www.instagram.com/redeeyak/",
 
     youtube: "",
 
-    leetcode: "",
+    leetcode: "https://leetcode.com/u/Redeeyak/",
 
     codeforces: "",
 

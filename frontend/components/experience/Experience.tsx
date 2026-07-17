@@ -10,7 +10,7 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
   return (
     <section
       id="experience"
-      className={cn("py-20 lg:py-28", className)}
+      className={cn("py-16 lg:py-28", className)}
       {...props}
     >
       <Container>

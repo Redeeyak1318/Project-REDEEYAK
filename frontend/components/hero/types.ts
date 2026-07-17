@@ -10,6 +10,7 @@ export interface HeroData {
   badge: string;
   greeting: string;
   name: string;
+  branding?: string;
   role: string;
   description: string;
   image?: {
