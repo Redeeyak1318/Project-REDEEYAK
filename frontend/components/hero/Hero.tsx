@@ -16,17 +16,18 @@ export const Hero = ({
       id="home"
       {...props}
       className={cn(
-        "relative min-h-[calc(100vh-4rem)] flex flex-col justify-center pt-12 pb-16 lg:pt-24 lg:pb-32",
+        "relative min-h-[calc(100vh-4rem)] flex flex-col justify-center pt-8 pb-12 lg:pt-24 lg:pb-32",
         className
       )}
       aria-label="Introduction"
     >
       <Container className="flex-grow flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
-          <div className="order-2 lg:order-1">
+          <div>
             <HeroContent />
           </div>
-          <div className="order-1 lg:order-2">
+
+          <div>
             <HeroImage />
           </div>
         </div>

@@ -1,6 +1,8 @@
 import * as React from "react";
 import { HERO_DATA } from "./constants";
 import { AvailabilityBadge } from "./AvailabilityBadge";
+import { HeroActions } from "./HeroActions";
+import { HeroSocials } from "./HeroSocials";
 import { cn } from "@/lib/utils";
 
 export interface HeroContentProps extends React.HTMLAttributes<HTMLDivElement> { }
@@ -37,6 +39,11 @@ export const HeroContent = ({ className, ...props }: HeroContentProps) => {
           {HERO_DATA.description}
         </p>
       ) : null}
+
+      <div className="flex flex-col gap-6 pt-4">
+        <HeroActions />
+        <HeroSocials />
+      </div>
     </div>
   );
 };
