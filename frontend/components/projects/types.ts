@@ -17,3 +17,10 @@ export interface TechnologyCategoryData {
   title: string;
   technologies: string[];
 }
+
+export interface TimelineEntry {
+  year: string;
+  title: string;
+  description: string;
+  technologies?: string[];
+}

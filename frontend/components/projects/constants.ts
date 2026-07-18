@@ -1,4 +1,31 @@
-import { Project, TechnologyCategoryData } from "./types";
+import { Project, TechnologyCategoryData, TimelineEntry } from "./types";
+
+export const PROJECT_TIMELINE: TimelineEntry[] = [
+  {
+    year: "Present",
+    title: "Project REDEEYAK",
+    description: "Designed and continue to develop a modern personal portfolio platform showcasing projects, research, and technical expertise using Next.js and a scalable component architecture.",
+    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    year: "2026",
+    title: "FoundersKick Development",
+    description: "Architected and built a comprehensive full-stack networking platform to connect and empower entrepreneurs globally.",
+    technologies: ["Node.js", "MongoDB", "Express", "Next.js"],
+  },
+  {
+    year: "2026",
+    title: "EUREEKA Internship",
+    description: "Contributed to production-ready features in an agile team environment, emphasizing software engineering best practices.",
+    technologies: ["React", "Git", "Agile"],
+  },
+  {
+    year: "Learning",
+    title: "Competitive Programming Journey",
+    description: "Began a rigorous journey solving hundreds of algorithmic challenges, achieving notable rankings in regional contests.",
+    technologies: ["C++", "Algorithms", "Data Structures"],
+  }
+];
 
 export const TECHNOLOGIES_DATA: TechnologyCategoryData[] = [
   {
