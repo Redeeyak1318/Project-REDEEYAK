@@ -78,3 +78,16 @@ export interface ResearchPublicationsPreviewData {
   description: string;
   publications: ResearchPublication[];
 }
+
+export interface ResearchCTAAction {
+  id: string;
+  label: string;
+  href: string;
+  primary?: boolean;
+}
+
+export interface ResearchCTAData {
+  title: string;
+  description: string;
+  actions: ResearchCTAAction[];
+}

@@ -3,6 +3,7 @@ import { ResearchPhilosophy } from "./philosophy";
 import { ResearchCurrent } from "./current";
 import { ResearchTimelinePreview } from "./timeline-preview";
 import { ResearchPublicationsPreview } from "./publications-preview";
+import { ResearchCTA } from "./cta";
 
 export function Research() {
     return (
@@ -12,6 +13,7 @@ export function Research() {
             <ResearchCurrent />
             <ResearchTimelinePreview />
             <ResearchPublicationsPreview />
+            <ResearchCTA />
         </main>
     );
 }

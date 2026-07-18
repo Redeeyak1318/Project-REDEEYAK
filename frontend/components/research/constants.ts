@@ -1,4 +1,4 @@
-import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData } from "./types";
+import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData, ResearchCTAData } from "./types";
 import { BrainCircuit, Cpu, Lightbulb, Users } from "lucide-react";
 
 export const RESEARCH_HERO: ResearchHeroData = {
@@ -149,6 +149,24 @@ export const RESEARCH_PUBLICATIONS_PREVIEW: ResearchPublicationsPreviewData = {
       year: "2023",
       description: "Empirical study measuring the impact of information density on developer cognitive load during complex debugging tasks.",
       tags: ["Developer Experience", "Cognitive Load"]
+    }
+  ]
+};
+
+export const RESEARCH_CTA: ResearchCTAData = {
+  title: "Ready to Collaborate?",
+  description: "Whether you're interested in discussing research ideas, exploring potential collaborations, or simply connecting professionally, I'm always open to new conversations.",
+  actions: [
+    {
+      id: "collaborate",
+      label: "Get in Touch",
+      href: "/contact",
+      primary: true,
+    },
+    {
+      id: "portfolio",
+      label: "Explore Portfolio",
+      href: "/portfolio",
     }
   ]
 };
