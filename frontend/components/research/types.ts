@@ -61,3 +61,20 @@ export interface ResearchTimelinePreviewData {
   description: string;
   items: ResearchTimelineItem[];
 }
+
+export interface ResearchPublication {
+  id: string;
+  title: string;
+  type: string;
+  status: string;
+  venue: string;
+  year: string;
+  description: string;
+  tags: string[];
+}
+
+export interface ResearchPublicationsPreviewData {
+  title: string;
+  description: string;
+  publications: ResearchPublication[];
+}

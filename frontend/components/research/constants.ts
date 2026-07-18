@@ -1,4 +1,4 @@
-import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData } from "./types";
+import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData } from "./types";
 import { BrainCircuit, Cpu, Lightbulb, Users } from "lucide-react";
 
 export const RESEARCH_HERO: ResearchHeroData = {
@@ -112,6 +112,43 @@ export const RESEARCH_TIMELINE_PREVIEW: ResearchTimelinePreviewData = {
       title: "Cognitive Load Mapping",
       description: "Conducted empirical studies on the relationship between interface density and developer productivity.",
       category: "Research Study"
+    }
+  ]
+};
+
+export const RESEARCH_PUBLICATIONS_PREVIEW: ResearchPublicationsPreviewData = {
+  title: "Selected Publications",
+  description: "A curated selection of peer-reviewed papers, preprints, and ongoing manuscripts detailing our core research findings.",
+  publications: [
+    {
+      id: "pub-1",
+      title: "Generative UI: Synthesizing Interfaces in Real-Time",
+      type: "Journal Article",
+      status: "Published",
+      venue: "ACM Transactions on Computer-Human Interaction",
+      year: "2024",
+      description: "An exploration of large language models as rendering engines, capable of generating context-aware user interfaces on the fly.",
+      tags: ["Generative UI", "HCI", "LLMs"]
+    },
+    {
+      id: "pub-2",
+      title: "The Agentic DOM: A New Paradigm for Web Architecture",
+      type: "Conference Paper",
+      status: "Under Review",
+      venue: "CHI 2025",
+      year: "2025",
+      description: "Proposing a new architecture where DOM elements possess autonomous behaviors to adapt to user interaction patterns.",
+      tags: ["Web Architecture", "Agentic Systems"]
+    },
+    {
+      id: "pub-3",
+      title: "Cognitive Density in IDE Workflows",
+      type: "Technical Report",
+      status: "Preprint",
+      venue: "arXiv",
+      year: "2023",
+      description: "Empirical study measuring the impact of information density on developer cognitive load during complex debugging tasks.",
+      tags: ["Developer Experience", "Cognitive Load"]
     }
   ]
 };
