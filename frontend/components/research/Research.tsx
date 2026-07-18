@@ -1,11 +1,13 @@
-import { Container } from "@/components/layout";
+import { ResearchHero } from "./hero";
+import { ResearchPhilosophy } from "./philosophy";
+import { ResearchCurrent } from "./current";
 
 export function Research() {
     return (
         <main>
-            <Container>
-                {/* Research Module */}
-            </Container>
+            <ResearchHero />
+            <ResearchPhilosophy />
+            <ResearchCurrent />
         </main>
     );
 }
