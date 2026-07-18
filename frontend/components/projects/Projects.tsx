@@ -1,11 +1,11 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout";
-import { ProjectsHeader } from "./ProjectsHeader";
-import { ProjectsGrid } from "./ProjectsGrid";
+import { ProjectsHero } from "@/components/projects/hero/ProjectsHero";
+import { ProjectsGrid } from "@/components/projects/collection/ProjectsGrid";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
-export interface ProjectsProps extends React.HTMLAttributes<HTMLElement> {}
+export interface ProjectsProps extends React.HTMLAttributes<HTMLElement> { }
 
 export const Projects = ({ className, ...props }: ProjectsProps) => {
   return (
@@ -18,7 +18,7 @@ export const Projects = ({ className, ...props }: ProjectsProps) => {
       <Container>
         <ScrollReveal>
           <div className="flex flex-col gap-12 lg:gap-16">
-            <ProjectsHeader />
+            <ProjectsHero />
             <ProjectsGrid />
           </div>
         </ScrollReveal>

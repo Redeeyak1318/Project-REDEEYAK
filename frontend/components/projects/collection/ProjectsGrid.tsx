@@ -1,9 +1,9 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import { PROJECTS_DATA } from "./constants";
-import { ProjectCard } from "./ProjectCard";
+import { PROJECTS_DATA } from "@/components/projects/constants";
+import { ProjectCard } from "@/components/projects/collection/ProjectCard";
 
-export interface ProjectsGridProps extends React.HTMLAttributes<HTMLDivElement> {}
+export interface ProjectsGridProps extends React.HTMLAttributes<HTMLDivElement> { }
 
 export const ProjectsGrid = ({ className, ...props }: ProjectsGridProps) => {
   const { projects } = PROJECTS_DATA;

@@ -1,7 +1,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils";
-import type { Project } from "./types";
+import type { Project } from "@/components/projects/types";
 
 export interface ProjectCardProps extends React.HTMLAttributes<HTMLDivElement> {
   project: Project;
