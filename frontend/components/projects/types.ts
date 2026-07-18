@@ -33,3 +33,16 @@ export interface FutureFocus {
   icon: LucideIcon;
   tags?: string[];
 }
+
+export interface ProjectsCTAData {
+  title: string;
+  description: string;
+  primaryAction: {
+    label: string;
+    href: string;
+  };
+  secondaryAction: {
+    label: string;
+    href: string;
+  };
+}

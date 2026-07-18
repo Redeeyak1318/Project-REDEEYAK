@@ -1,5 +1,5 @@
 import { BrainCircuit, Cpu, Globe } from "lucide-react";
-import { Project, TechnologyCategoryData, TimelineEntry, FutureFocus } from "./types";
+import { Project, TechnologyCategoryData, TimelineEntry, FutureFocus, ProjectsCTAData } from "./types";
 
 export const PROJECT_TIMELINE: TimelineEntry[] = [
   {
@@ -136,4 +136,18 @@ export const FUTURE_FOCUS_DATA: FutureFocus[] = [
     tags: ["OSS", "Community", "Collaboration"],
   },
 ];
+
+export const PROJECTS_CTA_DATA: ProjectsCTAData = {
+  title: "Let's Build Something Great",
+  description: "Have a project in mind or want to discuss potential collaborations? I'm always open to new opportunities and exciting challenges.",
+  primaryAction: {
+    label: "Get in Touch",
+    href: "/contact",
+  },
+  secondaryAction: {
+    label: "View Experience",
+    href: "/experience",
+  },
+};
+
 
