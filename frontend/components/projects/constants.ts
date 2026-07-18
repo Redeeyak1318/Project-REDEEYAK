@@ -1,4 +1,5 @@
-import { Project, TechnologyCategoryData, TimelineEntry } from "./types";
+import { BrainCircuit, Cpu, Globe } from "lucide-react";
+import { Project, TechnologyCategoryData, TimelineEntry, FutureFocus } from "./types";
 
 export const PROJECT_TIMELINE: TimelineEntry[] = [
   {
@@ -114,3 +115,25 @@ export const PROJECTS_DATA = {
     },
   ] as Project[],
 };
+
+export const FUTURE_FOCUS_DATA: FutureFocus[] = [
+  {
+    title: "Artificial Intelligence",
+    description: "Exploring the integration of large language models and intelligent agents into practical, user-facing applications.",
+    icon: BrainCircuit,
+    tags: ["LLMs", "Agents", "LangChain"],
+  },
+  {
+    title: "Systems Engineering",
+    description: "Designing robust microservices and serverless solutions that handle high traffic with graceful degradation.",
+    icon: Cpu,
+    tags: ["Microservices", "Serverless", "Edge Computing"],
+  },
+  {
+    title: "Open Source",
+    description: "Actively contributing to and maintaining open-source libraries to push the web development community forward.",
+    icon: Globe,
+    tags: ["OSS", "Community", "Collaboration"],
+  },
+];
+

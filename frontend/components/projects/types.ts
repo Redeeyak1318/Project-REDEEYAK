@@ -1,3 +1,5 @@
+import type { LucideIcon } from "lucide-react";
+
 export interface Project {
   id: string;
   title: string;
@@ -23,4 +25,11 @@ export interface TimelineEntry {
   title: string;
   description: string;
   technologies?: string[];
+}
+
+export interface FutureFocus {
+  title: string;
+  description: string;
+  icon: LucideIcon;
+  tags?: string[];
 }
