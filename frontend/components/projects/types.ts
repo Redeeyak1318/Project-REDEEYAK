@@ -7,5 +7,13 @@ export interface Project {
   highlights?: string[];
   githubUrl?: string;
   liveUrl?: string;
-  featured?: boolean;
+  category?: string;
+  status?: string;
+  timeline?: string;
+  impact?: string;
+}
+
+export interface TechnologyCategoryData {
+  title: string;
+  technologies: string[];
 }

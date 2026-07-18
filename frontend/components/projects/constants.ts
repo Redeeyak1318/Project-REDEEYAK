@@ -1,8 +1,49 @@
-import { Project } from "./types";
+import { Project, TechnologyCategoryData } from "./types";
+
+export const TECHNOLOGIES_DATA: TechnologyCategoryData[] = [
+  {
+    title: "Frontend",
+    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    technologies: ["Node.js", "Express"],
+  },
+  {
+    title: "Database",
+    technologies: ["MongoDB"],
+  },
+  {
+    title: "Languages",
+    technologies: ["TypeScript", "C++", "Java"],
+  },
+  {
+    title: "Tools & Methods",
+    technologies: ["Git", "Agile", "Algorithms", "Data Structures"],
+  },
+];
 
 export const PROJECTS_DATA = {
   title: "Featured Projects",
   subtitle: "Showcasing my work in full-stack development, AI, and research.",
+  featuredProject: {
+    id: "founderskick",
+    title: "FoundersKick",
+    description: "A full-stack networking platform designed to connect entrepreneurs, foster collaboration, and support startup communities.",
+    imageSrc: "/projects/project_founderskick.png",
+    technologies: ["Next.js", "Node.js", "MongoDB", "Express"],
+    highlights: [
+      "Developed full-stack features to support user interactions.",
+      "Optimized database queries for efficient data retrieval.",
+      "Implemented secure authentication and user profiles."
+    ],
+    githubUrl: "https://github.com/Redeeyak1318/FoundersKick",
+    liveUrl: "https://founderskick.com",
+    category: "Full-Stack Web App",
+    status: "Live",
+    timeline: "2023 - 2024",
+    impact: "Connected thousands of entrepreneurs.",
+  },
   projects: [
     {
       id: "redeeyak",
@@ -17,21 +58,6 @@ export const PROJECTS_DATA = {
       ],
       githubUrl: "https://github.com/Redeeyak1318/Project-REDEEYAK",
       liveUrl: "https://project-redeeyak.vercel.app",
-      featured: true,
-    },
-    {
-      id: "founderskick",
-      title: "FoundersKick",
-      description: "A full-stack networking platform designed to connect entrepreneurs, foster collaboration, and support startup communities.",
-      imageSrc: "/projects/project_founderskick.png",
-      technologies: ["Next.js", "Node.js", "MongoDB", "Express"],
-      highlights: [
-        "Developed full-stack features to support user interactions.",
-        "Optimized database queries for efficient data retrieval.",
-        "Implemented secure authentication and user profiles."
-      ],
-      githubUrl: "https://github.com/Redeeyak1318/FoundersKick",
-      liveUrl: "https://founderskick.com",
     },
     {
       id: "eureeka",
