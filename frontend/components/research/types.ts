@@ -47,3 +47,17 @@ export interface ResearchCurrentData {
   description: string;
   projects: CurrentResearchProject[];
 }
+
+export interface ResearchTimelineItem {
+  id: string;
+  year: string;
+  title: string;
+  description: string;
+  category?: string;
+}
+
+export interface ResearchTimelinePreviewData {
+  title: string;
+  description: string;
+  items: ResearchTimelineItem[];
+}

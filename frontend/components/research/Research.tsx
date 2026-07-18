@@ -1,6 +1,7 @@
 import { ResearchHero } from "./hero";
 import { ResearchPhilosophy } from "./philosophy";
 import { ResearchCurrent } from "./current";
+import { ResearchTimelinePreview } from "./timeline-preview";
 
 export function Research() {
     return (
@@ -8,6 +9,7 @@ export function Research() {
             <ResearchHero />
             <ResearchPhilosophy />
             <ResearchCurrent />
+            <ResearchTimelinePreview />
         </main>
     );
 }

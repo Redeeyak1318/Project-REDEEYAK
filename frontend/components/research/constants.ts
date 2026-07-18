@@ -1,4 +1,4 @@
-import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData } from "./types";
+import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData } from "./types";
 import { BrainCircuit, Cpu, Lightbulb, Users } from "lucide-react";
 
 export const RESEARCH_HERO: ResearchHeroData = {
@@ -84,6 +84,34 @@ export const RESEARCH_CURRENT: ResearchCurrentData = {
       progress: 85,
       topics: ["LLMs", "Developer Tools", "Vector Search"],
       badge: "In Review"
+    }
+  ]
+};
+
+export const RESEARCH_TIMELINE_PREVIEW: ResearchTimelinePreviewData = {
+  title: "Research Milestones",
+  description: "Key developments and paradigm shifts in our continuous exploration of human-computer interaction.",
+  items: [
+    {
+      id: "milestone-1",
+      year: "2024",
+      title: "Agentic Design Systems",
+      description: "Published foundational research on generative design systems capable of autonomous evolution.",
+      category: "Publication"
+    },
+    {
+      id: "milestone-2",
+      year: "2023",
+      title: "Semantic UI Framework",
+      description: "Developed a declarative UI framework powered by large language models for real-time interface synthesis.",
+      category: "Open Source"
+    },
+    {
+      id: "milestone-3",
+      year: "2022",
+      title: "Cognitive Load Mapping",
+      description: "Conducted empirical studies on the relationship between interface density and developer productivity.",
+      category: "Research Study"
     }
   ]
 };
