@@ -6,6 +6,7 @@ import { ContactHeader } from "./ContactHeader";
 import { ContactInfo } from "./ContactInfo";
 import { ContactForm } from "./ContactForm";
 import { SocialLinks } from "./SocialLinks";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export interface ContactProps
     extends React.HTMLAttributes<HTMLElement> { }
@@ -22,18 +23,20 @@ export const Contact = ({
             {...props}
         >
             <Container>
-                <div className="space-y-16">
-                    <ContactHeader />
+                <ScrollReveal>
+                    <div className="space-y-16">
+                        <ContactHeader />
 
-                    <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
-                        <div className="space-y-8">
-                            <ContactInfo />
-                            <SocialLinks />
+                        <div className="grid gap-12 lg:grid-cols-2 lg:items-start">
+                            <div className="space-y-8">
+                                <ContactInfo />
+                                <SocialLinks />
+                            </div>
+
+                            <ContactForm />
                         </div>
-
-                        <ContactForm />
                     </div>
-                </div>
+                </ScrollReveal>
             </Container>
         </section>
     );

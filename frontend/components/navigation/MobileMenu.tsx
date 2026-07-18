@@ -30,7 +30,7 @@ export const MobileMenu = () => {
               key={item.href}
               href={item.href}
               onClick={() => setOpen(false)}
-              className="text-lg font-medium text-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md px-2 py-1"
+              className="text-lg font-medium text-foreground hover:text-primary transition-all duration-200 hover:translate-x-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md px-2 py-1 motion-reduce:transition-none motion-reduce:hover:translate-x-0"
             >
               {item.label}
             </Link>

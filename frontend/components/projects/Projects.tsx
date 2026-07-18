@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout";
 import { ProjectsHeader } from "./ProjectsHeader";
 import { ProjectsGrid } from "./ProjectsGrid";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export interface ProjectsProps extends React.HTMLAttributes<HTMLElement> {}
 
@@ -15,10 +16,12 @@ export const Projects = ({ className, ...props }: ProjectsProps) => {
       {...props}
     >
       <Container>
-        <div className="flex flex-col gap-12 lg:gap-16">
-          <ProjectsHeader />
-          <ProjectsGrid />
-        </div>
+        <ScrollReveal>
+          <div className="flex flex-col gap-12 lg:gap-16">
+            <ProjectsHeader />
+            <ProjectsGrid />
+          </div>
+        </ScrollReveal>
       </Container>
     </section>
   );

@@ -4,6 +4,7 @@ import { HeroContent } from "./HeroContent";
 import { HeroImage } from "./HeroImage";
 import { ScrollIndicator } from "./ScrollIndicator";
 import { cn } from "@/lib/utils";
+import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 export interface HeroProps extends React.HTMLAttributes<HTMLElement> { }
 
@@ -28,7 +29,9 @@ export const Hero = ({
           </div>
 
           <div>
-            <HeroImage />
+            <ScrollReveal delay={200} direction="left">
+              <HeroImage />
+            </ScrollReveal>
           </div>
         </div>
         <div className="mt-16 hidden md:flex justify-center">

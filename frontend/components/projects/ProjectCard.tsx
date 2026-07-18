@@ -12,7 +12,7 @@ export const ProjectCard = ({ project, className, ...props }: ProjectCardProps) 
 
   return (
     <div
-      className={cn("flex flex-col h-full gap-6 rounded-xl border bg-card p-5 sm:p-6 shadow-sm transition-shadow hover:shadow-md", className)}
+      className={cn("group/card flex flex-col h-full gap-6 rounded-xl border bg-card p-5 sm:p-6 shadow-sm transition-all duration-300 ease-out hover:scale-[1.01] hover:shadow-md hover:border-border/80 motion-reduce:transition-none motion-reduce:hover:scale-100", className)}
       {...props}
     >
       <div className="overflow-hidden rounded-md border">

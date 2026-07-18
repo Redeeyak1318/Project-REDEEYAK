@@ -13,7 +13,7 @@ export const NavLinks = ({ className }: NavLinksProps) => {
         <Link
           key={item.href}
           href={item.href}
-          className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md px-2 py-1"
+          className="text-sm font-medium text-muted-foreground hover:text-primary transition-all duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 rounded-md px-2 py-1 motion-reduce:transition-none motion-reduce:hover:translate-y-0"
         >
           {item.label}
         </Link>
