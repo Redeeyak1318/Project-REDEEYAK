@@ -11,21 +11,21 @@ export const CTAActions = ({ className, ...props }: React.HTMLAttributes<HTMLDiv
     <ScrollReveal delay={200}>
       <div className={cn("flex flex-wrap justify-center gap-4 w-full", className)} {...props}>
         {RESEARCH_CTA.actions.map((action) => (
-          <Link key={action.id} href={action.href}>
-            <Button
-              size="lg"
-              variant={action.primary ? "default" : "outline"}
-              className={cn(
-                "rounded-full font-medium px-8 w-full sm:w-auto",
-                action.primary && "group"
-              )}
-            >
-              {action.label}
-              {action.primary && (
-                <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
-              )}
-            </Button>
-          </Link>
+          <Button
+            key={action.id}
+            render={<Link href={action.href} />}
+            size="lg"
+            variant={action.primary ? "default" : "outline"}
+            className={cn(
+              "rounded-full font-medium px-8 w-full sm:w-auto",
+              action.primary && "group"
+            )}
+          >
+            {action.label}
+            {action.primary && (
+              <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />
+            )}
+          </Button>
         ))}
       </div>
     </ScrollReveal>
