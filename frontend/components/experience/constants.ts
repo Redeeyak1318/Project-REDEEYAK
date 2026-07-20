@@ -1,4 +1,4 @@
-import { ExperienceData, ProfessionalExperienceData, ResearchExperienceData } from "./types";
+import { ExperienceData, ProfessionalExperienceData, ResearchExperienceData, LeadershipExperienceData } from "./types";
 
 export const EXPERIENCE_DATA: ExperienceData = {
   title: "Experience",
@@ -108,6 +108,49 @@ export const RESEARCH_EXPERIENCE_DATA: ResearchExperienceData = {
         "Mathematical Modeling",
         "Literature Review",
         "Scientific Writing"
+      ]
+    }
+  ]
+};
+
+export const LEADERSHIP_EXPERIENCE_DATA: LeadershipExperienceData = {
+  title: "Leadership & Community",
+  description: "Leadership grows through collaboration, contribution, and continuous engagement with the technical community.",
+  experiences: [
+    {
+      id: "ieee-member",
+      title: "IEEE Student Member",
+      organization: "IEEE Dibrugarh University Student Branch",
+      duration: "2026 – Present",
+      description: "Actively participate in technical activities, professional development initiatives, and engineering community engagement through the IEEE student branch.",
+      highlights: [
+        "Professional Networking",
+        "Technical Events",
+        "Engineering Community"
+      ]
+    },
+    {
+      id: "hackathon-participant",
+      title: "Hackathon Participant",
+      organization: "National & Institutional Hackathons",
+      duration: "2026 – Present",
+      description: "Participated in collaborative software development competitions focused on solving real-world challenges through innovation and teamwork.",
+      highlights: [
+        "Rapid Prototyping",
+        "Team Collaboration",
+        "Problem Solving"
+      ]
+    },
+    {
+      id: "open-source",
+      title: "Open Source & Personal Projects",
+      organization: "GitHub",
+      duration: "Ongoing",
+      description: "Developing production-quality software projects while continuously improving software engineering practices, architecture, and modern web development skills.",
+      highlights: [
+        "Full-Stack Development",
+        "Software Architecture",
+        "Version Control"
       ]
     }
   ]

@@ -42,3 +42,18 @@ export interface ResearchExperienceData {
   description?: string;
   experiences: ResearchExperienceEntry[];
 }
+
+export interface LeadershipExperienceEntry {
+  id: string;
+  title: string;
+  organization: string;
+  duration: string;
+  description: string;
+  highlights: string[];
+}
+
+export interface LeadershipExperienceData {
+  title: string;
+  description?: string;
+  experiences: LeadershipExperienceEntry[];
+}
