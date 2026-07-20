@@ -28,3 +28,17 @@ export interface ProfessionalExperienceData {
   description?: string;
   experiences: ProfessionalExperienceEntry[];
 }
+
+export interface ResearchExperienceEntry {
+  id: string;
+  title: string;
+  status: string;
+  description: string;
+  focusAreas: string[];
+}
+
+export interface ResearchExperienceData {
+  title: string;
+  description?: string;
+  experiences: ResearchExperienceEntry[];
+}

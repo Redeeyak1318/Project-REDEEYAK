@@ -1,4 +1,4 @@
-import { ExperienceData, ProfessionalExperienceData } from "./types";
+import { ExperienceData, ProfessionalExperienceData, ResearchExperienceData } from "./types";
 
 export const EXPERIENCE_DATA: ExperienceData = {
   title: "Experience",
@@ -69,6 +69,46 @@ export const PROFESSIONAL_EXPERIENCE_DATA: ProfessionalExperienceData = {
         "Contributed to institutional branding and outreach."
       ],
       reflection: "This internship strengthened my understanding of communication, teamwork, and applying technical skills in a real-world educational environment."
+    }
+  ]
+};
+
+export const RESEARCH_EXPERIENCE_DATA: ResearchExperienceData = {
+  title: "Research Experience",
+  description: "Academic research has strengthened my analytical thinking, problem-solving abilities, and commitment to continuous learning.",
+  experiences: [
+    {
+      id: "emg-ecg",
+      title: "EMG & ECG Signal Analysis",
+      status: "Ongoing",
+      description: "Research focused on analyzing electromyography (EMG) and electrocardiography (ECG) signals for biomedical applications.",
+      focusAreas: [
+        "Biomedical Signal Processing",
+        "Data Analysis",
+        "Pattern Recognition"
+      ]
+    },
+    {
+      id: "hc-visualization",
+      title: "Human-Centered Healthcare Visualization",
+      status: "Active",
+      description: "Exploring visualization techniques that improve accessibility and decision-making in healthcare systems through user-centered design.",
+      focusAreas: [
+        "Information Visualization",
+        "Healthcare Systems",
+        "Human-Centered Design"
+      ]
+    },
+    {
+      id: "math-applied-research",
+      title: "Mathematics in Applied Research",
+      status: "Review Paper",
+      description: "Conducting a thematic review on mathematical methods, applications, and emerging research frontiers across artificial intelligence, software engineering, and interdisciplinary sciences.",
+      focusAreas: [
+        "Mathematical Modeling",
+        "Literature Review",
+        "Scientific Writing"
+      ]
     }
   ]
 };
