@@ -6,13 +6,15 @@ import { ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export const HeroActions = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
+  if (!RESEARCH_HERO.actions || RESEARCH_HERO.actions.length === 0) return null;
+
   return (
     <ScrollReveal delay={450}>
       <div className={cn("pt-4 flex flex-wrap gap-4", className)} {...props}>
         {RESEARCH_HERO.actions.map((action, i) => (
-          <Button 
-            key={i} 
-            size="lg" 
+          <Button
+            key={i}
+            size="lg"
             variant={action.primary ? "default" : "outline"}
             className={cn("rounded-full font-medium px-8", action.primary && "group")}
           >

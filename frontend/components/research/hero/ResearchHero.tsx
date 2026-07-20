@@ -1,14 +1,14 @@
 import * as React from "react";
 import { HeroBackground } from "./HeroBackground";
-import { HeroBadge } from "./HeroBadge";
 import { HeroHeading } from "./HeroHeading";
 import { HeroDescription } from "./HeroDescription";
 import { HeroActions } from "./HeroActions";
 import { HeroStats } from "./HeroStats";
+import { HeroBadge } from "./HeroBadge";
 import { Container } from "@/components/layout";
 import { cn } from "@/lib/utils";
 
-export interface ResearchHeroProps extends React.HTMLAttributes<HTMLElement> {}
+export interface ResearchHeroProps extends React.HTMLAttributes<HTMLElement> { }
 
 export const ResearchHero = ({ className, ...props }: ResearchHeroProps) => {
   return (
@@ -20,9 +20,10 @@ export const ResearchHero = ({ className, ...props }: ResearchHeroProps) => {
       <HeroBackground />
       <Container>
         <div className="flex flex-col gap-6 lg:gap-8 relative z-10">
-          <HeroBadge />
           <HeroHeading />
           <HeroDescription />
+          <HeroBadge />
+          <HeroActions />
           <HeroActions />
           <HeroStats />
         </div>

@@ -2,88 +2,77 @@ import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, Research
 import { BrainCircuit, Cpu, Lightbulb, Users } from "lucide-react";
 
 export const RESEARCH_HERO: ResearchHeroData = {
-  badge: "Research Portfolio",
-  title: "Exploring the Intersections of Computation and Cognition",
-  description: "I investigate novel paradigms in software architecture, focusing on how artificial intelligence can be seamlessly integrated into developer workflows and user experiences to augment human capabilities.",
-  actions: [
-    {
-      label: "Explore Publications",
-      href: "/research/publications",
-      primary: true,
-    }
-  ],
-  stats: [
-    {
-      label: "Publications",
-      value: "12+"
-    },
-    {
-      label: "Citations",
-      value: "350+"
-    }
-  ]
+  badge: "",
+  title: "Research",
+  description: "Exploring questions before building solutions.",
+  actions: [],
+  stats: [],
 };
 
 export const RESEARCH_PHILOSOPHY: ResearchPhilosophyData = {
   title: "Research Philosophy",
-  description: "My approach is driven by the conviction that computation should adapt to human cognition, not the other way around. I focus on building systems that amplify capability through intuitive design.",
+  description:
+    "I approach research as a process of asking meaningful questions before building solutions. My work combines curiosity-driven learning, interdisciplinary thinking, applied mathematics, and evidence-based engineering to understand complex problems before attempting to solve them. Rather than pursuing technology for its own sake, I focus on research that can translate into practical impact, particularly in healthcare technology, biomedical signal analysis, and human-centered visualization. Every investigation contributes to a deeper understanding of how engineering principles, data, and thoughtful design can improve real-world systems while creating opportunities for future collaboration and continuous learning.",
   principles: [
     {
-      id: "human-centric",
-      title: "Human-Centric Architecture",
-      description: "Systems should be designed with deep empathy for the user, minimizing cognitive load and abstracting away unnecessary complexity.",
+      id: "curiosity-driven",
+      title: "Curiosity-Driven Learning",
+      description: "Continuously exploring new paradigms, languages, and frameworks to uncover how they solve fundamental engineering problems.",
+      icon: Lightbulb,
+    },
+    {
+      id: "interdisciplinary-thinking",
+      title: "Interdisciplinary Thinking",
+      description: "Applying insights from cognitive science, design, and systems architecture to build more intuitive software.",
       icon: Users,
     },
     {
-      id: "symbiotic-ai",
-      title: "Symbiotic Intelligence",
-      description: "Artificial intelligence should act as an amplifier of human capability, functioning as a collaborative partner rather than a replacement.",
-      icon: BrainCircuit,
-    },
-    {
-      id: "emergent-design",
-      title: "Emergent Design",
-      description: "Robust solutions emerge from simple, composable primitives that interact in predictable ways, avoiding monolithic fragility.",
+      id: "practical-impact",
+      title: "Practical Impact",
+      description: "Ensuring research translates into tools, libraries, or patterns that solve real-world problems for users and developers.",
       icon: Cpu,
     },
     {
-      id: "continuous-discovery",
-      title: "Continuous Discovery",
-      description: "Research is an iterative process of prototyping, validation, and refinement, guided by empirical evidence and user feedback.",
-      icon: Lightbulb,
+      id: "engineering-through-evidence",
+      title: "Engineering Through Evidence",
+      description: "Relying on empirical data, performance metrics, and rigorous studies rather than assumptions to guide architectural decisions.",
+      icon: BrainCircuit,
     }
   ]
 };
 
 export const RESEARCH_CURRENT: ResearchCurrentData = {
   title: "Current Research",
-  description: "Active projects exploring the next generation of software architecture and human-computer interaction.",
+  description: "Active investigations at the intersection of biomedical engineering, healthcare technology, and applied mathematics.",
   projects: [
     {
-      id: "adaptive-interfaces",
-      title: "Adaptive User Interfaces",
-      description: "Investigating UI components that dynamically adapt their complexity based on user context and cognitive load.",
-      status: "Prototyping Phase",
-      progress: 65,
-      topics: ["HCI", "React", "State Machines"],
-      badge: "Work In Progress"
+      id: "emg-ecg-analysis",
+      title: "EMG & ECG Signal Analysis",
+      description:
+        "Exploring computational techniques for processing electromyography (EMG) and electrocardiography (ECG) signals to support biomedical analysis and future healthcare applications.",
+      status: "Ongoing",
+      progress: 60,
+      topics: ["Biomedical Signals", "Signal Processing", "Data Analysis"],
+      badge: "Active"
     },
     {
-      id: "agentic-orchestration",
-      title: "Agentic Orchestration Patterns",
-      description: "Developing robust architectural patterns for coordinating multiple autonomous agents within a single application context.",
-      status: "Literature Review & Architecture",
+      id: "healthcare-visualization",
+      title: "Human-Centered Healthcare Visualization",
+      description:
+        "Investigating human-centered visualization techniques that improve the interpretation and communication of complex healthcare data for researchers and practitioners.",
+      status: "Active",
+      progress: 45,
+      topics: ["HCI", "Data Visualization", "Health Informatics"]
+    },
+    {
+      id: "applied-math-engineering",
+      title: "Applied Mathematics in Engineering Research",
+      description:
+        "Conducting a review of mathematical methods and their applications in modern engineering research to identify emerging trends, methodologies, and future research opportunities.",
+      status: "Review Paper",
       progress: 30,
-      topics: ["AI", "Architecture", "Distributed Systems"]
-    },
-    {
-      id: "semantic-memory",
-      title: "Semantic Memory for IDEs",
-      description: "Exploring how integrated development environments can leverage vector databases to provide highly contextual code generation.",
-      status: "Evaluation Phase",
-      progress: 85,
-      topics: ["LLMs", "Developer Tools", "Vector Search"],
-      badge: "In Review"
+      topics: ["Applied Mathematics", "Systems Engineering", "Literature Review"],
+      badge: "Drafting"
     }
   ]
 };
