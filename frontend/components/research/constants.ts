@@ -1,4 +1,4 @@
-import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData, ResearchCTAData, ResearchAreasData } from "./types";
+import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData, ResearchCTAData, ResearchAreasData, ResearchReadingData } from "./types";
 import { BrainCircuit, Cpu, Lightbulb, Users } from "lucide-react";
 
 export const RESEARCH_HERO: ResearchHeroData = {
@@ -163,6 +163,43 @@ export const RESEARCH_AREAS: ResearchAreasData = {
       description: "Research examining mathematical methods and quantitative models used across modern engineering disciplines.",
       focus: "Mathematical methods applied to engineering research",
       keywords: ["Applied Mathematics", "Engineering", "Modeling", "Research Methods"]
+    }
+  ]
+};
+
+export const RESEARCH_READING: ResearchReadingData = {
+  title: "Literature Reviews & Reading List",
+  description: "A curated collection of books, papers, and reviews currently informing my research.",
+  items: [
+    {
+      id: "reading-1",
+      title: "Biomedical Signal Processing and Signal Analysis",
+      authors: "Various Authors",
+      category: "Book",
+      status: "Currently Studying",
+      description:
+        "Studying foundational concepts and computational methods used in biomedical signal analysis.",
+      topics: ["Biomedical Signals", "EMG", "ECG"]
+    },
+    {
+      id: "reading-2",
+      title: "Human–Computer Interaction for Healthcare",
+      authors: "Various Authors",
+      category: "Research Papers",
+      status: "Reading",
+      description:
+        "Reviewing research on human-centered interaction and visualization techniques for healthcare applications.",
+      topics: ["HCI", "Healthcare", "Visualization"]
+    },
+    {
+      id: "reading-3",
+      title: "Applied Mathematics in Engineering",
+      authors: "Various Authors",
+      category: "Literature Review",
+      status: "Reviewing",
+      description:
+        "Exploring mathematical models and analytical methods commonly applied in engineering research.",
+      topics: ["Mathematics", "Engineering", "Modeling"]
     }
   ]
 };

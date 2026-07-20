@@ -105,3 +105,19 @@ export interface ResearchAreasData {
   description: string;
   areas: ResearchArea[];
 }
+
+export interface ResearchReadingItem {
+  id: string;
+  title: string;
+  authors: string;
+  category: string;
+  status: string;
+  description: string;
+  topics: string[];
+}
+
+export interface ResearchReadingData {
+  title: string;
+  description: string;
+  items: ResearchReadingItem[];
+}
