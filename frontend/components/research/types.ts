@@ -67,7 +67,7 @@ export interface ResearchPublication {
   title: string;
   type: string;
   status: string;
-  venue: string;
+  venue?: string;
   year: string;
   description: string;
   tags: string[];

@@ -106,21 +106,20 @@ export const RESEARCH_TIMELINE_PREVIEW: ResearchTimelinePreviewData = {
 };
 
 export const RESEARCH_PUBLICATIONS_PREVIEW: ResearchPublicationsPreviewData = {
-  title: "Selected Publications",
-  description: "A curated selection of peer-reviewed papers, preprints, and ongoing manuscripts detailing our core research findings.",
+  title: "Featured Publication",
+  description: "Highlighting the manuscript currently under development and the research directions it explores.",
   publications: [
     {
       id: "pub-1",
-      title: "Generative UI: Synthesizing Interfaces in Real-Time",
-      type: "Journal Article",
-      status: "Published",
-      venue: "ACM Transactions on Computer-Human Interaction",
-      year: "2024",
-      description: "An exploration of large language models as rendering engines, capable of generating context-aware user interfaces on the fly.",
-      tags: ["Generative UI", "HCI", "LLMs"]
+      title: "Mathematics in Applied Research: A Thematic Review of Methods, Applications, and Emerging Frontiers",
+      type: "Review Paper",
+      status: "In Progress",
+      year: "2026",
+      description: "A review manuscript examining mathematical methods, their applications across engineering disciplines, and emerging research directions to provide a structured overview of current trends and future opportunities.",
+      tags: ["Applied Mathematics", "Engineering", "Literature Review", "Research Methods"]
     },
     {
-      id: "pub-2",
+      id: "pub-3",
       title: "The Agentic DOM: A New Paradigm for Web Architecture",
       type: "Conference Paper",
       status: "Under Review",

@@ -32,9 +32,11 @@ export const PublicationCard = ({ publication, className, ...props }: Publicatio
           {publication.title}
         </h3>
         
-        <p className="text-sm font-medium text-foreground/70">
-          {publication.venue}
-        </p>
+        {publication.venue && (
+          <p className="text-sm font-medium text-foreground/70">
+            {publication.venue}
+          </p>
+        )}
       </div>
 
       <p className="text-muted-foreground leading-relaxed flex-grow text-sm sm:text-base mt-2">
