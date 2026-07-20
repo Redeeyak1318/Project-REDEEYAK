@@ -13,3 +13,18 @@ export interface ExperienceData {
   subtitle?: string;
   experiences: ExperienceEntry[];
 }
+
+export interface ProfessionalExperienceEntry {
+  id: string;
+  organization: string;
+  role: string;
+  duration: string;
+  highlights: string[];
+  reflection?: string;
+}
+
+export interface ProfessionalExperienceData {
+  title: string;
+  description?: string;
+  experiences: ProfessionalExperienceEntry[];
+}

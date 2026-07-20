@@ -1,4 +1,4 @@
-import { ExperienceData } from "./types";
+import { ExperienceData, ProfessionalExperienceData } from "./types";
 
 export const EXPERIENCE_DATA: ExperienceData = {
   title: "Experience",
@@ -50,4 +50,25 @@ export const EXPERIENCE_DATA: ExperienceData = {
       ]
     }
   ],
+};
+
+export const PROFESSIONAL_EXPERIENCE_DATA: ProfessionalExperienceData = {
+  title: "Professional Experience",
+  description: "Roles where I contributed to institutional goals, collaborated with teams, and applied technical skills in real-world environments.",
+  experiences: [
+    {
+      id: "eureeka-intern",
+      organization: "EUREEKA Institute of Computer and Fine Arts",
+      role: "Computer Science Intern",
+      duration: "July 2026",
+      highlights: [
+        "Assisted in technical and educational initiatives.",
+        "Conducted surveys and community engagement activities.",
+        "Designed promotional materials and digital content.",
+        "Produced educational and marketing videos.",
+        "Contributed to institutional branding and outreach."
+      ],
+      reflection: "This internship strengthened my understanding of communication, teamwork, and applying technical skills in a real-world educational environment."
+    }
+  ]
 };

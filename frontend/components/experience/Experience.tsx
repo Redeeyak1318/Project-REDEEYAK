@@ -5,6 +5,8 @@ import { ExperienceHeader } from "./ExperienceHeader";
 import { ExperienceTimeline } from "./ExperienceTimeline";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
+import { ProfessionalExperience } from "./professional";
+
 export interface ExperienceProps extends React.HTMLAttributes<HTMLElement> {}
 
 export const Experience = ({ className, ...props }: ExperienceProps) => {
@@ -20,6 +22,7 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
           <div className="flex flex-col gap-12 lg:gap-16">
             <ExperienceHeader />
             <ExperienceTimeline />
+            <ProfessionalExperience />
           </div>
         </ScrollReveal>
       </Container>
