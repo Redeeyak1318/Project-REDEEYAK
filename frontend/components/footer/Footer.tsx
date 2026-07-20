@@ -5,6 +5,7 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 import { FooterBrand } from "./FooterBrand";
 import { FooterNavigation } from "./FooterNavigation";
+import { FooterSocials } from "./FooterSocials";
 import { FooterBottom } from "./FooterBottom";
 
 export interface FooterProps extends React.HTMLAttributes<HTMLElement> { }
@@ -23,7 +24,7 @@ export const Footer = ({ className, ...props }: FooterProps) => {
 
                             <FooterNavigation className="md:justify-self-center md:pt-1" />
 
-                            <div aria-hidden="true" className="hidden md:block" />
+                            <FooterSocials className="md:justify-self-end md:pt-1" />
                         </div>
                     </ScrollReveal>
 

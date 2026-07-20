@@ -1,42 +1,61 @@
 import * as React from "react";
-import Link from "next/link";
-
 import { cn } from "@/lib/utils";
-import { FOOTER_DATA } from "./constants";
+import { socialLinks } from "@/lib/social-links";
+import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 
-export interface FooterSocialsProps
-    extends React.HTMLAttributes<HTMLDivElement> { }
+export interface FooterSocialsProps extends React.HTMLAttributes<HTMLDivElement> { }
 
-export const FooterSocials = ({
-    className,
-    ...props
-}: FooterSocialsProps) => {
-    const { socials } = FOOTER_DATA;
-
+export const FooterSocials = ({ className, ...props }: FooterSocialsProps) => {
     return (
-        <div
+        <nav
             className={cn(
-                "flex items-center justify-center gap-4 md:justify-end",
+                "flex flex-wrap items-center justify-center gap-4 md:justify-end",
                 className
             )}
             {...props}
         >
-            {socials.map((social) => {
-                const Icon = social.icon;
-
-                return (
-                    <Link
-                        key={social.label}
-                        href={social.href}
-                        aria-label={social.label}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-md p-2 text-muted-foreground transition-colors hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
-                    >
-                        <Icon className="h-5 w-5" aria-hidden="true" />
-                    </Link>
-                );
-            })}
-        </div>
+            {socialLinks.github && (
+                <a
+                    href={socialLinks.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub Profile"
+                    className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                    <FaGithub className="h-5 w-5" aria-hidden="true" />
+                </a>
+            )}
+            {socialLinks.linkedin && (
+                <a
+                    href={socialLinks.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn Profile"
+                    className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                    <FaLinkedin className="h-5 w-5" aria-hidden="true" />
+                </a>
+            )}
+            {socialLinks.x && (
+                <a
+                    href={socialLinks.x}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="X (formerly Twitter) Profile"
+                    className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                    <FaXTwitter className="h-5 w-5" aria-hidden="true" />
+                </a>
+            )}
+            {socialLinks.email && (
+                <a
+                    href={`mailto:${socialLinks.email}`}
+                    aria-label="Email Contact"
+                    className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                >
+                    <FaEnvelope className="h-5 w-5" aria-hidden="true" />
+                </a>
+            )}
+        </nav>
     );
 };
