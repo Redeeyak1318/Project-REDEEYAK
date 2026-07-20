@@ -1,4 +1,4 @@
-import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData, ResearchCTAData } from "./types";
+import { ResearchHeroData, ResearchPhilosophyData, ResearchCurrentData, ResearchTimelinePreviewData, ResearchPublicationsPreviewData, ResearchCTAData, ResearchAreasData } from "./types";
 import { BrainCircuit, Cpu, Lightbulb, Users } from "lucide-react";
 
 export const RESEARCH_HERO: ResearchHeroData = {
@@ -117,26 +117,6 @@ export const RESEARCH_PUBLICATIONS_PREVIEW: ResearchPublicationsPreviewData = {
       year: "2026",
       description: "A review manuscript examining mathematical methods, their applications across engineering disciplines, and emerging research directions to provide a structured overview of current trends and future opportunities.",
       tags: ["Applied Mathematics", "Engineering", "Literature Review", "Research Methods"]
-    },
-    {
-      id: "pub-3",
-      title: "The Agentic DOM: A New Paradigm for Web Architecture",
-      type: "Conference Paper",
-      status: "Under Review",
-      venue: "CHI 2025",
-      year: "2025",
-      description: "Proposing a new architecture where DOM elements possess autonomous behaviors to adapt to user interaction patterns.",
-      tags: ["Web Architecture", "Agentic Systems"]
-    },
-    {
-      id: "pub-3",
-      title: "Cognitive Density in IDE Workflows",
-      type: "Technical Report",
-      status: "Preprint",
-      venue: "arXiv",
-      year: "2023",
-      description: "Empirical study measuring the impact of information density on developer cognitive load during complex debugging tasks.",
-      tags: ["Developer Experience", "Cognitive Load"]
     }
   ]
 };
@@ -155,6 +135,34 @@ export const RESEARCH_CTA: ResearchCTAData = {
       id: "portfolio",
       label: "Explore Portfolio",
       href: "/portfolio",
+    }
+  ]
+};
+
+export const RESEARCH_AREAS: ResearchAreasData = {
+  title: "Research Areas",
+  description: "Research domains that define my current academic interests and guide ongoing investigations.",
+  areas: [
+    {
+      id: "biomedical-signal-processing",
+      title: "Biomedical Signal Processing",
+      description: "Research focused on computational methods for processing and analyzing physiological signals such as EMG and ECG.",
+      focus: "EMG, ECG, biomedical data analysis",
+      keywords: ["EMG", "ECG", "Signal Processing", "Biomedical Engineering"]
+    },
+    {
+      id: "healthcare-visualization",
+      title: "Healthcare Visualization",
+      description: "Research exploring human-centered visualization techniques that improve the interpretation of healthcare data.",
+      focus: "Human-centered visualization for healthcare systems",
+      keywords: ["Healthcare", "Visualization", "HCI", "Information Design"]
+    },
+    {
+      id: "applied-mathematics",
+      title: "Applied Mathematics",
+      description: "Research examining mathematical methods and quantitative models used across modern engineering disciplines.",
+      focus: "Mathematical methods applied to engineering research",
+      keywords: ["Applied Mathematics", "Engineering", "Modeling", "Research Methods"]
     }
   ]
 };

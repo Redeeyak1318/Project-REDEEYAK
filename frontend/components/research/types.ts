@@ -91,3 +91,17 @@ export interface ResearchCTAData {
   description: string;
   actions: ResearchCTAAction[];
 }
+
+export interface ResearchArea {
+  id: string;
+  title: string;
+  description: string;
+  focus: string;
+  keywords: string[];
+}
+
+export interface ResearchAreasData {
+  title: string;
+  description: string;
+  areas: ResearchArea[];
+}
