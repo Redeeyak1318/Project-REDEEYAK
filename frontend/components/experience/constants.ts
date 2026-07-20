@@ -2,7 +2,7 @@ import { ExperienceData } from "./types";
 
 export const EXPERIENCE_DATA: ExperienceData = {
   title: "Experience",
-  subtitle: "Building experience through projects, research, and real-world collaboration.",
+  subtitle: "Every experience is an opportunity to learn, contribute, and grow.",
   experiences: [
     {
       organization: "Project REDEEYAK",
@@ -16,15 +16,23 @@ export const EXPERIENCE_DATA: ExperienceData = {
       technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Vercel"]
     },
     {
-      organization: "EUREEKA Education & Services",
-      role: "Software & Digital Marketing Intern",
+      organization: "EUREEKA Institute of Computer and Fine Arts",
+      role: "Computer Science Intern",
       duration: "July 2026",
       description: [
-        "Conducted field surveys and market research.",
-        "Designed digital promotional content.",
-        "Contributed to educational outreach initiatives."
+        "Assisted in technical and educational initiatives.",
+        "Conducted surveys and community engagement activities.",
+        "Designed promotional materials and digital content.",
+        "Produced educational and marketing videos.",
+        "Contributed to institutional branding and outreach."
       ],
-      technologies: ["Market Research", "Digital Marketing", "Content Design"]
+      technologies: [
+        "Communication",
+        "Teamwork",
+        "Community Engagement",
+        "Digital Content Creation",
+        "Branding"
+      ]
     },
     {
       organization: "Independent Academic Research",
