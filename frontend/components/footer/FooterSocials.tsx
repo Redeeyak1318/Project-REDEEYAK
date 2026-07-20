@@ -3,11 +3,12 @@ import { cn } from "@/lib/utils";
 import { socialLinks } from "@/lib/social-links";
 import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 
-export interface FooterSocialsProps extends React.HTMLAttributes<HTMLDivElement> { }
+export interface FooterSocialsProps extends React.HTMLAttributes<HTMLElement> { }
 
 export const FooterSocials = ({ className, ...props }: FooterSocialsProps) => {
     return (
         <nav
+            aria-label="Social links"
             className={cn(
                 "flex flex-wrap items-center justify-center gap-4 md:justify-end",
                 className

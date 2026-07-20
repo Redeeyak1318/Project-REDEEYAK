@@ -16,7 +16,9 @@ export const FooterCopyright = ({ className, ...props }: FooterCopyrightProps) =
             {...props}
         >
             <small>{copyright}</small>
-            <p className="hidden sm:inline">{attribution}</p>
+            <small className="hidden sm:inline">
+                {attribution}
+            </small>
         </div>
     );
 };

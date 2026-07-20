@@ -2,7 +2,7 @@ import * as React from "react";
 import { cn } from "@/lib/utils";
 import { FooterCopyright } from "./FooterCopyright";
 
-export interface FooterBottomProps extends React.HTMLAttributes<HTMLDivElement> { }
+export interface FooterBottomProps extends React.HTMLAttributes<HTMLElement> { }
 
 export const FooterBottom = ({ className, ...props }: FooterBottomProps) => {
     return (

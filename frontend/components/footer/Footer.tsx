@@ -1,4 +1,5 @@
 import * as React from "react";
+import type { FooterProps } from "./types";
 import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
@@ -8,7 +9,6 @@ import { FooterNavigation } from "./FooterNavigation";
 import { FooterSocials } from "./FooterSocials";
 import { FooterBottom } from "./FooterBottom";
 
-export interface FooterProps extends React.HTMLAttributes<HTMLElement> { }
 
 export const Footer = ({ className, ...props }: FooterProps) => {
     return (
