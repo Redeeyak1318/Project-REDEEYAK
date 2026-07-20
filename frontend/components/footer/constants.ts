@@ -1,42 +1,14 @@
 import { siteConfig } from "@/lib/site-config";
-import { socialLinks } from "@/lib/social-links";
-import { navigationItems } from "@/components/navigation/config";
-import {
-    FaGithub,
-    FaLinkedin,
-    FaEnvelope,
-    FaXTwitter,
-} from "react-icons/fa6";
+import { FooterBrandData, FooterBottomData } from "./types";
 
-import { FooterData } from "./types";
+const currentYear = new Date().getFullYear();
 
-export const FOOTER_DATA: FooterData = {
-    brand: {
-        name: siteConfig.name,
-        tagline: siteConfig.description,
-    },
-    navigation: [...navigationItems],
+export const FOOTER_BRAND: FooterBrandData = {
+    name: siteConfig.name,
+    tagline: siteConfig.description,
+};
 
-    socials: [
-        {
-            label: "GitHub",
-            href: socialLinks.github,
-            icon: FaGithub,
-        },
-        {
-            label: "LinkedIn",
-            href: socialLinks.linkedin,
-            icon: FaLinkedin,
-        },
-        {
-            label: "X",
-            href: socialLinks.x,
-            icon: FaXTwitter,
-        },
-        {
-            label: "Email",
-            href: `mailto:${socialLinks.email}`,
-            icon: FaEnvelope,
-        },
-    ],
+export const FOOTER_BOTTOM: FooterBottomData = {
+    copyright: `© ${currentYear} ${siteConfig.name}. All rights reserved.`,
+    attribution: "Built with Next.js, React & TypeScript.",
 };

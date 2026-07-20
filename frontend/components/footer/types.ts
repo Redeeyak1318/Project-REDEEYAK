@@ -1,23 +1,9 @@
-import { IconType } from "react-icons";
-
-export interface FooterBrand {
+export interface FooterBrandData {
     name: string;
     tagline: string;
 }
 
-export interface FooterNavigationItem {
-    label: string;
-    href: string;
-}
-
-export interface FooterSocialItem {
-    label: string;
-    href: string;
-    icon: IconType;
-}
-
-export interface FooterData {
-    brand: FooterBrand;
-    navigation: FooterNavigationItem[];
-    socials: FooterSocialItem[];
+export interface FooterBottomData {
+    copyright: string;
+    attribution: string;
 }

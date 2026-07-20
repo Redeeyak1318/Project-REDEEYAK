@@ -1,30 +1,22 @@
 import * as React from "react";
-import { siteConfig } from "@/lib/site-config";
-
 import { cn } from "@/lib/utils";
+import { FOOTER_BOTTOM } from "./constants";
 
-export interface FooterCopyrightProps
-    extends React.HTMLAttributes<HTMLParagraphElement> { }
+export interface FooterCopyrightProps extends React.HTMLAttributes<HTMLDivElement> { }
 
-export const FooterCopyright = ({
-    className,
-    ...props
-}: FooterCopyrightProps) => {
-    const currentYear = new Date().getFullYear();
+export const FooterCopyright = ({ className, ...props }: FooterCopyrightProps) => {
+    const { copyright, attribution } = FOOTER_BOTTOM;
 
     return (
-        <p
+        <div
             className={cn(
-                "text-center text-sm text-muted-foreground",
+                "flex flex-col items-center justify-between gap-4 text-sm text-muted-foreground sm:flex-row",
                 className
             )}
             {...props}
         >
-            © {currentYear} {siteConfig.name}. All rights reserved.
-            <span className="hidden sm:inline">
-                {" "}
-                Built with {siteConfig.name}.
-            </span>
-        </p>
+            <small>{copyright}</small>
+            <p className="hidden sm:inline">{attribution}</p>
+        </div>
     );
 };
