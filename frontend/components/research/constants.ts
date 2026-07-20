@@ -78,29 +78,29 @@ export const RESEARCH_CURRENT: ResearchCurrentData = {
 };
 
 export const RESEARCH_TIMELINE_PREVIEW: ResearchTimelinePreviewData = {
-  title: "Research Milestones",
-  description: "Key developments and paradigm shifts in our continuous exploration of human-computer interaction.",
+  title: "Research Journey",
+  description: "Key milestones that reflect my evolving interests in engineering, applied mathematics, and research.",
   items: [
     {
       id: "milestone-1",
-      year: "2024",
-      title: "Agentic Design Systems",
-      description: "Published foundational research on generative design systems capable of autonomous evolution.",
-      category: "Publication"
+      year: "2025",
+      title: "Beginning Applied Mathematics Research",
+      description: "Started exploring mathematical methods used in engineering research, laying the foundation for future review work.",
+      category: "Research"
     },
     {
       id: "milestone-2",
-      year: "2023",
-      title: "Semantic UI Framework",
-      description: "Developed a declarative UI framework powered by large language models for real-time interface synthesis.",
-      category: "Open Source"
+      year: "2026",
+      title: "Review Manuscript Development",
+      description: "Began developing the review manuscript 'Mathematics in Applied Research: A Thematic Review of Methods, Applications, and Emerging Frontiers.'",
+      category: "Publication"
     },
     {
       id: "milestone-3",
-      year: "2022",
-      title: "Cognitive Load Mapping",
-      description: "Conducted empirical studies on the relationship between interface density and developer productivity.",
-      category: "Research Study"
+      year: "Present",
+      title: "Biomedical & Healthcare Research",
+      description: "Expanding research interests toward biomedical signal processing, healthcare visualization, and interdisciplinary engineering applications.",
+      category: "Current Focus"
     }
   ]
 };
@@ -122,8 +122,8 @@ export const RESEARCH_PUBLICATIONS_PREVIEW: ResearchPublicationsPreviewData = {
 };
 
 export const RESEARCH_CTA: ResearchCTAData = {
-  title: "Ready to Collaborate?",
-  description: "Whether you're interested in discussing research ideas, exploring potential collaborations, or simply connecting professionally, I'm always open to new conversations.",
+  title: "Research Collaboration",
+  description: "I'm always interested in discussing research ideas, exchanging knowledge, and exploring opportunities for collaboration in applied mathematics, biomedical engineering, healthcare technology, and software engineering research.",
   actions: [
     {
       id: "collaborate",
@@ -133,7 +133,7 @@ export const RESEARCH_CTA: ResearchCTAData = {
     },
     {
       id: "portfolio",
-      label: "Explore Portfolio",
+      label: "View Projects",
       href: "/portfolio",
     }
   ]
