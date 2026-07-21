@@ -1,6 +1,13 @@
-import type { HTMLAttributes, AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
+import type {
+  HTMLAttributes,
+  AnchorHTMLAttributes,
+  ButtonHTMLAttributes,
+  ComponentType,
+  ReactNode,
+} from "react";
 
 export interface ContactSectionData {
+  badge: string;
   title: string;
   description: string;
 }
@@ -10,15 +17,22 @@ export interface ContactMethod {
   title: string;
   description: string;
   value: string;
-  link: string;
-  icon?: ReactNode;
+  href?: string;
+  icon: ComponentType<{ className?: string }>;
+  external?: boolean;
+  status?: string;
+  badge?: string;
+}
+
+export interface MethodCardProps extends HTMLAttributes<HTMLDivElement> {
+  method: ContactMethod;
 }
 
 export interface SocialLink {
   id: string;
   platform: string;
   url: string;
-  icon?: ReactNode;
+  icon: ComponentType<{ className?: string }>;
 }
 
 export interface AvailabilityStatus {
@@ -39,11 +53,22 @@ export interface ContactSocialData {
   socials: SocialLink[];
 }
 
+export interface ContactCTAAction {
+  id: string;
+  label: string;
+  href: string;
+  primary?: boolean;
+  external?: boolean;
+}
+
 export interface ContactCTAData {
   title: string;
   description: string;
   buttonText: string;
   buttonLink: string;
+  primaryAction?: ContactCTAAction;
+  secondaryAction?: ContactCTAAction;
+  actions?: ContactCTAAction[];
 }
 
 export interface ContactFormState {
@@ -67,7 +92,7 @@ export interface FormMessages {
 }
 
 export interface ContactCardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
-  icon: any;
+  icon: ComponentType<{ className?: string }>;
   label: string;
   value: string;
   href: string;
@@ -83,4 +108,15 @@ export interface FormFieldProps extends HTMLAttributes<HTMLDivElement> {
   id: string;
   error?: string;
   children?: ReactNode;
+}
+
+export interface FormFieldConfig {
+  id: string;
+  label: string;
+  placeholder: string;
+  type?: string;
+  required?: boolean;
+  autoComplete?: string;
+  component?: "input" | "textarea";
+  rows?: number;
 }
