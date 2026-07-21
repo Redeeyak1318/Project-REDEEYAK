@@ -8,6 +8,7 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { ProfessionalExperience } from "./professional";
 import { ResearchExperience } from "./research";
 import { LeadershipExperience } from "./leadership";
+import { ExperienceReflection } from "./reflection";
 
 export interface ExperienceProps extends React.HTMLAttributes<HTMLElement> {}
 
@@ -27,6 +28,7 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
             <ProfessionalExperience />
             <ResearchExperience />
             <LeadershipExperience />
+            <ExperienceReflection />
           </div>
         </ScrollReveal>
       </Container>
