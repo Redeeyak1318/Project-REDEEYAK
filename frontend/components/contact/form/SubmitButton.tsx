@@ -1,8 +1,8 @@
 import * as React from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import type { SubmitButtonProps } from "./types";
-import { FORM_MESSAGES } from "./constants";
+import type { SubmitButtonProps } from "../types";
+import { FORM_MESSAGES } from "../constants";
 
 export const SubmitButton = React.forwardRef<HTMLButtonElement, SubmitButtonProps>(
     ({ className, status = "idle", children, ...props }, ref) => {

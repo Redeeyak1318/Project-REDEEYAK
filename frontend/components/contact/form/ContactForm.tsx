@@ -5,8 +5,8 @@ import { Textarea } from "@/components/ui/textarea";
 import { cn } from "@/lib/utils";
 import { FormField } from "./FormField";
 import { SubmitButton } from "./SubmitButton";
-import { FORM_MESSAGES } from "./constants";
-import type { ContactFormState } from "./types";
+import { FORM_MESSAGES } from "../constants";
+import type { ContactFormState } from "../types";
 
 export interface ContactFormProps extends React.HTMLAttributes<HTMLDivElement> { }
 

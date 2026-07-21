@@ -1,6 +1,6 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
-import type { FormFieldProps } from "./types";
+import type { FormFieldProps } from "../types";
 
 export const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
     ({ className, label, id, error, children, ...props }, ref) => {

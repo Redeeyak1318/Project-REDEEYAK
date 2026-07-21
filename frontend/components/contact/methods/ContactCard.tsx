@@ -1,7 +1,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import type { ContactCardProps } from "./types";
+import type { ContactCardProps } from "../types";
 
 export const ContactCard = ({
     icon: Icon,

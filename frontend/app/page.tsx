@@ -5,7 +5,7 @@ import { Projects } from "@/components/projects";
 
 const Experience = dynamic(() => import("@/components/experience").then((mod) => mod.Experience));
 const Skills = dynamic(() => import("@/components/skills").then((mod) => mod.Skills));
-const Contact = dynamic(() => import("@/components/contact").then((mod) => mod.Contact));
+const ContactSection = dynamic(() => import("@/components/contact").then((mod) => mod.ContactSection));
 const Footer = dynamic(() => import("@/components/footer").then((mod) => mod.Footer));
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <Projects />
       <Experience />
       <Skills />
-      <Contact />
+      <ContactSection />
       <Footer />
     </main>
   );

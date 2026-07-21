@@ -1,68 +1,86 @@
-import type {
-    HTMLAttributes,
-    ButtonHTMLAttributes,
-    ReactNode,
-} from "react";
+import type { HTMLAttributes, AnchorHTMLAttributes, ButtonHTMLAttributes, ReactNode } from "react";
 
-import type { IconType } from "react-icons";
+export interface ContactSectionData {
+  title: string;
+  description: string;
+}
 
-export interface ContactProps extends HTMLAttributes<HTMLElement> { }
-
-export interface ContactInfoItem {
-    icon: IconType;
-    label: string;
-    value: string;
-    href: string;
+export interface ContactMethod {
+  id: string;
+  title: string;
+  description: string;
+  value: string;
+  link: string;
+  icon?: ReactNode;
 }
 
 export interface SocialLink {
-    name: string;
-    href: string;
-    icon: IconType;
+  id: string;
+  platform: string;
+  url: string;
+  icon?: ReactNode;
 }
 
-export interface ContactCardProps extends HTMLAttributes<HTMLAnchorElement> {
-    icon: IconType;
-    label: string;
-    value: string;
-    href: string;
+export interface AvailabilityStatus {
+  status: "available" | "unavailable" | "limited";
+  message: string;
+  timeline?: string;
 }
 
-
-
-export interface FormFieldProps extends HTMLAttributes<HTMLDivElement> {
-    label: string;
-    id: string;
-    error?: string;
-    children: ReactNode;
+export interface ContactMethodsData {
+  methods: ContactMethod[];
 }
 
-export interface SubmitButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    status?: "idle" | "loading" | "success" | "disabled";
+export interface ContactAvailabilityData {
+  availability: AvailabilityStatus;
+}
+
+export interface ContactSocialData {
+  socials: SocialLink[];
+}
+
+export interface ContactCTAData {
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
 }
 
 export interface ContactFormState {
-    name: string;
-    email: string;
-    subject: string;
-    message: string;
-}
-
-export interface AvailabilityData {
-    title: string;
-    description: string;
-    items: string[];
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
 }
 
 export interface FormMessages {
-    idle: string;
-    loading: string;
-    success: string;
-    disabled: string;
-    disabledSubtext: string;
-    error: string;
-    validation: {
-        required: string;
-        email: string;
-    };
+  idle: string;
+  loading: string;
+  success: string;
+  disabled: string;
+  disabledSubtext: string;
+  error: string;
+  validation: {
+    required: string;
+    email: string;
+  };
+}
+
+export interface ContactCardProps extends AnchorHTMLAttributes<HTMLAnchorElement> {
+  icon: any;
+  label: string;
+  value: string;
+  href: string;
+}
+
+export interface SubmitButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  status?: "idle" | "loading" | "success" | "disabled";
+  children?: ReactNode;
+}
+
+export interface FormFieldProps extends HTMLAttributes<HTMLDivElement> {
+  label: string;
+  id: string;
+  error?: string;
+  children?: ReactNode;
 }

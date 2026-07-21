@@ -1,11 +1,6 @@
-export * from "./Contact";
-export * from "./ContactHeader";
-export * from "./ContactContent";
-export * from "./ContactInfo";
-export * from "./ContactForm";
-export * from "./ContactCards";
-export * from "./ContactCard";
-export * from "./AvailabilityBadge";
-export * from "./SocialLinks";
-export * from "./FormField";
-export * from "./SubmitButton";
+export { ContactSection } from "./ContactSection";
+export { ContactHeader as ContactHero, ContactHeader } from "./hero";
+export { ContactCards as ContactMethods, ContactCards } from "./methods";
+export { ContactForm } from "./form";
+export { AvailabilityBadge as ContactAvailability } from "./availability";
+export { ContactCTA } from "./cta";

@@ -1,6 +1,6 @@
 import * as React from "react";
 
-import { CONTACT_DATA } from "./constants";
+import { CONTACT_SECTION } from "../constants";
 import { cn } from "@/lib/utils";
 
 export interface ContactHeaderProps
@@ -10,7 +10,7 @@ export const ContactHeader = ({
     className,
     ...props
 }: ContactHeaderProps) => {
-    const { badge, title, description } = CONTACT_DATA;
+    const { badge, title, description } = CONTACT_SECTION;
 
     return (
         <div
