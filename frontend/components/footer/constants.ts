@@ -2,9 +2,13 @@ import { siteConfig } from "@/lib/site-config";
 import { navigationItems } from "@/components/navigation/config";
 import { socialLinks } from "@/lib/social-links";
 import { FaGithub, FaLinkedin, FaXTwitter, FaEnvelope } from "react-icons/fa6";
-import { FooterBrandData, FooterBottomData, FooterNavigationLink, FooterSocialLink } from "./types";
+import type {
+    FooterBrandData,
+    FooterBottomData,
+    FooterNavigationLink,
+    FooterSocialLink,
+} from "./types";
 
-const currentYear = new Date().getFullYear();
 
 export const FOOTER_BRAND: FooterBrandData = {
     name: siteConfig.name,

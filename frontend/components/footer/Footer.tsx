@@ -16,19 +16,19 @@ export const Footer = ({ className, ...props }: FooterProps) => {
             {...props}
         >
             <Container>
-                <div className="flex flex-col gap-12">
-                    <ScrollReveal>
-                        <div className="grid gap-8 md:grid-cols-3 md:items-start">
-                            <FooterBrand />
-                            <FooterNavigation className="md:justify-self-center md:pt-1" />
-                            <FooterSocial className="md:justify-self-end md:pt-1" />
-                        </div>
-                    </ScrollReveal>
+                <ScrollReveal>
+                    <div className="flex flex-col gap-12">
 
-                    <ScrollReveal delay={150}>
+                        <div className="grid ...">
+                            <FooterBrand />
+                            <FooterNavigation />
+                            <FooterSocial />
+                        </div>
+
                         <FooterBottom />
-                    </ScrollReveal>
-                </div>
+
+                    </div>
+                </ScrollReveal>
             </Container>
         </footer>
     );

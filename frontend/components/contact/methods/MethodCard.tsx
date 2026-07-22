@@ -6,8 +6,8 @@ import { Button } from "@/components/ui/button";
 import type { ContactMethod, MethodCardProps } from "../types";
 
 export const MethodCard = ({ method, className, ...props }: MethodCardProps) => {
-  const { title, description, value, href, link, icon: IconOrNode, external, status } = method;
-  const targetHref = href || link;
+  const { title, description, value, href, icon: IconOrNode, external, status } = method;
+  const targetHref = href;
   const isExternal = external ?? (targetHref ? targetHref.startsWith("http") : false);
 
   const renderIcon = () => {
