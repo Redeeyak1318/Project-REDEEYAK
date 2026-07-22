@@ -1,9 +1,9 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { navigationItems } from "@/components/navigation/config";
+import { FOOTER_NAVIGATION } from "./constants";
 
-export interface FooterNavigationProps extends React.HTMLAttributes<HTMLElement> { }
+export interface FooterNavigationProps extends React.HTMLAttributes<HTMLElement> {}
 
 export const FooterNavigation = ({ className, ...props }: FooterNavigationProps) => {
     return (
@@ -15,7 +15,7 @@ export const FooterNavigation = ({ className, ...props }: FooterNavigationProps)
             )}
             {...props}
         >
-            {navigationItems.map((item) => (
+            {FOOTER_NAVIGATION.map((item) => (
                 <Link
                     key={item.href}
                     href={item.href}

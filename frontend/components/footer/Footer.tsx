@@ -6,9 +6,8 @@ import { ScrollReveal } from "@/components/ui/scroll-reveal";
 
 import { FooterBrand } from "./FooterBrand";
 import { FooterNavigation } from "./FooterNavigation";
-import { FooterSocials } from "./FooterSocials";
+import { FooterSocial } from "./FooterSocial";
 import { FooterBottom } from "./FooterBottom";
-
 
 export const Footer = ({ className, ...props }: FooterProps) => {
     return (
@@ -21,10 +20,8 @@ export const Footer = ({ className, ...props }: FooterProps) => {
                     <ScrollReveal>
                         <div className="grid gap-8 md:grid-cols-3 md:items-start">
                             <FooterBrand />
-
                             <FooterNavigation className="md:justify-self-center md:pt-1" />
-
-                            <FooterSocials className="md:justify-self-end md:pt-1" />
+                            <FooterSocial className="md:justify-self-end md:pt-1" />
                         </div>
                     </ScrollReveal>
 
