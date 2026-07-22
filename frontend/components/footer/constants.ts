@@ -23,24 +23,32 @@ export const FOOTER_NAVIGATION: FooterNavigationLink[] = navigationItems.map(
 
 export const FOOTER_SOCIAL: FooterSocialLink[] = [
     {
+        id: "github",
         platform: "GitHub",
         href: socialLinks.github,
         icon: FaGithub,
+        external: true,
     },
     {
+        id: "linkedin",
         platform: "LinkedIn",
         href: socialLinks.linkedin,
         icon: FaLinkedin,
+        external: true,
     },
     {
+        id: "x",
         platform: "X",
         href: socialLinks.x,
         icon: FaXTwitter,
+        external: true,
     },
     {
+        id: "email",
         platform: "Email",
         href: socialLinks.email ? `mailto:${socialLinks.email}` : "",
         icon: FaEnvelope,
+        external: false,
     },
 ].filter((link) => link.href && link.href !== "mailto:");
 

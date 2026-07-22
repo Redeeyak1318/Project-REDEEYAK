@@ -17,9 +17,11 @@ export interface FooterNavigationLink {
 }
 
 export interface FooterSocialLink {
+    id: string;
     platform: string;
     href: string;
     icon: IconType;
+    external: boolean;
 }
 
 export interface FooterBottomData {

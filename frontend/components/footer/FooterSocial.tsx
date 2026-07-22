@@ -1,6 +1,7 @@
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { FOOTER_SOCIAL } from "./constants";
+import { Button } from "@/components/ui/button";
 
 export interface FooterSocialProps extends React.HTMLAttributes<HTMLElement> {}
 
@@ -15,16 +16,22 @@ export const FooterSocial = ({ className, ...props }: FooterSocialProps) => {
             {...props}
         >
             {FOOTER_SOCIAL.map((item) => (
-                <a
-                    key={item.platform}
-                    href={item.href}
-                    target={item.href.startsWith("http") ? "_blank" : undefined}
-                    rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                    aria-label={`${item.platform} Profile`}
-                    className="rounded-full p-2 text-muted-foreground transition-colors hover:bg-accent hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                <Button
+                    key={item.id}
+                    variant="ghost"
+                    size="icon"
+                    className="rounded-full text-muted-foreground hover:text-foreground"
+                    render={
+                        <a 
+                            href={item.href}
+                            target={item.external ? "_blank" : undefined}
+                            rel={item.external ? "noopener noreferrer" : undefined}
+                            aria-label={`${item.platform} Profile`}
+                        />
+                    }
                 >
-                    <item.icon className="h-5 w-5" aria-hidden="true" />
-                </a>
+                    <item.icon aria-hidden="true" />
+                </Button>
             ))}
         </nav>
     );
