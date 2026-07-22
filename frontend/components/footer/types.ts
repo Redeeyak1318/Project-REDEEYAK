@@ -25,6 +25,7 @@ export interface FooterSocialLink {
 }
 
 export interface FooterBottomData {
-    copyright: string;
+    copyrightOwner: string;
+    copyrightText: string;
     attribution: string;
 }

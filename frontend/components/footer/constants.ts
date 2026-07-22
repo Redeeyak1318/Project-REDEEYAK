@@ -53,6 +53,7 @@ export const FOOTER_SOCIAL: FooterSocialLink[] = [
 ].filter((link) => link.href && link.href !== "mailto:");
 
 export const FOOTER_BOTTOM: FooterBottomData = {
-    copyright: `© ${currentYear} ${siteConfig.name}. All rights reserved.`,
+    copyrightOwner: siteConfig.name,
+    copyrightText: "All rights reserved.",
     attribution: "Built with Next.js, React & TypeScript.",
 };
