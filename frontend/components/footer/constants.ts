@@ -15,6 +15,7 @@ export const FOOTER_BRAND: FooterBrandData = {
 
 export const FOOTER_NAVIGATION: FooterNavigationLink[] = navigationItems.map(
     (item) => ({
+        id: item.label.toLowerCase().replace(/\s+/g, '-'),
         label: item.label,
         href: item.href,
     })

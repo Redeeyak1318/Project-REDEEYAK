@@ -11,6 +11,7 @@ export interface FooterBrandData {
 }
 
 export interface FooterNavigationLink {
+    id: string;
     label: string;
     href: string;
 }
