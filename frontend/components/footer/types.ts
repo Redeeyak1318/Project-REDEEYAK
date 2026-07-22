@@ -5,7 +5,9 @@ export interface FooterProps extends HTMLAttributes<HTMLElement> {}
 
 export interface FooterBrandData {
     name: string;
+    title: string;
     tagline: string;
+    description?: string;
 }
 
 export interface FooterNavigationLink {

@@ -8,7 +8,9 @@ const currentYear = new Date().getFullYear();
 
 export const FOOTER_BRAND: FooterBrandData = {
     name: siteConfig.name,
-    tagline: siteConfig.description,
+    title: "Full-Stack Developer & Computer Science Student",
+    tagline: "Let's build something amazing together.",
+    description: siteConfig.description,
 };
 
 export const FOOTER_NAVIGATION: FooterNavigationLink[] = navigationItems.map(
