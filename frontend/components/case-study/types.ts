@@ -16,10 +16,13 @@ export interface CaseStudyHeroData {
 }
 
 export interface ProjectOverviewData {
-  role: string;
-  timeline: string;
+  title?: string;
+  role?: string;
+  timeline?: string;
   teamSize?: string;
-  overview: string;
+  overview: string | string[];
+  highlight?: string;
+  keyPoints?: string[];
 }
 
 export interface ProblemStatementData {
