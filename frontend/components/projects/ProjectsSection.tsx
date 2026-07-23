@@ -2,11 +2,9 @@ import { Container } from "@/components/layout";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { ProjectsHero } from "./hero";
 import { FeaturedProject } from "./featured";
-import { ProjectCategories } from "./categories";
-import { ProjectsGrid } from "./grid";
 import { ProjectTimeline } from "./timeline";
 import { ProjectsCTA } from "./cta";
-
+import { ProjectsFilterContainer } from "./ProjectsFilterContainer";
 
 import {
   PROJECTS_HERO,
@@ -28,17 +26,10 @@ export function ProjectsSection() {
         <FeaturedProject {...FEATURED_PROJECT} />
       </ScrollReveal>
 
-      <ScrollReveal delay={150}>
-        <ProjectCategories
-          title={PROJECT_CATEGORIES.title}
-          description={PROJECT_CATEGORIES.description}
-          categories={PROJECT_CATEGORIES.categories}
-        />
-      </ScrollReveal>
-
-      <ScrollReveal delay={300}>
-        <ProjectsGrid projects={PROJECTS_GRID} />
-      </ScrollReveal>
+      <ProjectsFilterContainer
+        categoriesProps={PROJECT_CATEGORIES}
+        projects={PROJECTS_GRID}
+      />
 
       <ScrollReveal delay={150}>
         <ProjectTimeline items={PROJECT_TIMELINE} />
