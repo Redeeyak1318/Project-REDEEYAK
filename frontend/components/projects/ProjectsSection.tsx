@@ -29,7 +29,11 @@ export function ProjectsSection() {
       </ScrollReveal>
 
       <ScrollReveal delay={150}>
-        <ProjectCategories categories={PROJECT_CATEGORIES} />
+        <ProjectCategories
+          title={PROJECT_CATEGORIES.title}
+          description={PROJECT_CATEGORIES.description}
+          categories={PROJECT_CATEGORIES.categories}
+        />
       </ScrollReveal>
 
       <ScrollReveal delay={300}>

@@ -34,12 +34,17 @@ export const FEATURED_PROJECT: FeaturedProjectData = {
   },
 };
 
-export const PROJECT_CATEGORIES: ProjectCategory[] = [
-  { id: "all", name: "All Projects" },
-  { id: "full-stack", name: "Full-Stack Web App" },
-  { id: "ai", name: "Artificial Intelligence" },
-  { id: "research", name: "Research" },
-];
+export const PROJECT_CATEGORIES = {
+  title: "Project Categories",
+  description:
+    "Explore domains and technologies I specialize in, categorized by their primary focus areas.",
+  categories: [
+    { id: "all", name: "All Projects" },
+    { id: "full-stack", name: "Full-Stack Web App" },
+    { id: "ai", name: "Artificial Intelligence" },
+    { id: "research", name: "Research" },
+  ],
+};
 
 export const PROJECTS_GRID: Project[] = [
   {

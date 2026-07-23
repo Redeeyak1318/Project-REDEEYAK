@@ -1,3 +1,5 @@
+import { ElementType } from "react";
+
 export type ProjectStatus = "Live" | "In Progress" | "Planned" | "Completed";
 
 export interface Technology {
@@ -7,6 +9,9 @@ export interface Technology {
 export interface ProjectCategory {
   id: string;
   name: string;
+  icon?: ElementType;
+  description?: string;
+  count?: number;
 }
 
 export interface Project {
