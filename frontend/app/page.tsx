@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { Hero } from "@/components/hero";
 import { About } from "@/components/about";
-import { Projects } from "@/components/projects";
+import { ProjectsSection } from "@/components/projects";
 
 const Experience = dynamic(() => import("@/components/experience").then((mod) => mod.Experience));
 const Skills = dynamic(() => import("@/components/skills").then((mod) => mod.Skills));
@@ -13,7 +13,7 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Projects />
+      <ProjectsSection />
       <Experience />
       <Skills />
       <ContactSection />
