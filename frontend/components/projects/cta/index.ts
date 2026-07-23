@@ -1,3 +1,1 @@
-export * from "./ProjectsCTA";
-export * from "./CTAContent";
-export * from "./CTAActions";
+export { ProjectsCTA } from "./ProjectsCTA";

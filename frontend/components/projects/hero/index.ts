@@ -1,3 +1,1 @@
-export * from "./ProjectsHero";
-export * from "./HeroTitle";
-export * from "./HeroDescription";
+export { ProjectsHero } from "./ProjectsHero";

@@ -1,3 +1,1 @@
-export * from "./ProjectTimeline";
-export * from "./TimelineItem";
-export * from "./TimelineConnector";
+export { ProjectTimeline } from "./ProjectTimeline";

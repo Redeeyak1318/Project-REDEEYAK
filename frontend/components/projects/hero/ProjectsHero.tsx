@@ -1,24 +1,21 @@
-import * as React from "react";
-import { Container } from "@/components/layout";
-import { cn } from "@/lib/utils";
-import { HeroTitle } from "./HeroTitle";
-import { HeroDescription } from "./HeroDescription";
+import { ProjectsHeroData } from "../types";
 
-export interface ProjectsHeroProps extends React.HTMLAttributes<HTMLElement> {}
-
-export const ProjectsHero = ({ className, ...props }: ProjectsHeroProps) => {
+export function ProjectsHero({ heading, subtitle, introCopy }: ProjectsHeroData) {
   return (
-    <section
-      aria-label="Projects Hero"
-      className={cn("relative flex flex-col justify-center pt-16 pb-12 lg:pt-32 lg:pb-24 overflow-hidden", className)}
-      {...props}
-    >
-      <Container>
-        <div className="flex flex-col gap-6 lg:gap-8 items-center text-center relative z-10">
-          <HeroTitle />
-          <HeroDescription />
-        </div>
-      </Container>
-    </section>
+    <div className="flex flex-col gap-4 max-w-3xl">
+      <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-foreground">
+        {heading}
+      </h1>
+      {subtitle && (
+        <h2 className="text-xl md:text-2xl text-muted-foreground font-medium">
+          {subtitle}
+        </h2>
+      )}
+      {introCopy && (
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed mt-4">
+          {introCopy}
+        </p>
+      )}
+    </div>
   );
-};
+}

@@ -1,143 +1,123 @@
-import { BrainCircuit, Cpu, Globe } from "lucide-react";
-import { Project, TechnologyCategoryData, TimelineEntry, FutureFocus, ProjectsCTAData } from "./types";
+import {
+  ProjectsHeroData,
+  FeaturedProjectData,
+  ProjectCategory,
+  Project,
+  ProjectsTimelineItem,
+  ProjectsCTAData,
+} from "./types";
 
-export const PROJECT_TIMELINE: TimelineEntry[] = [
-  {
-    year: "Present",
-    title: "Project REDEEYAK",
-    description: "Designed and continue to develop a modern personal portfolio platform showcasing projects, research, and technical expertise using Next.js and a scalable component architecture.",
-    technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    year: "2026",
-    title: "FoundersKick Development",
-    description: "Architected and built a comprehensive full-stack networking platform to connect and empower entrepreneurs globally.",
-    technologies: ["Node.js", "MongoDB", "Express", "Next.js"],
-  },
-  {
-    year: "2026",
-    title: "EUREEKA Internship",
-    description: "Contributed to production-ready features in an agile team environment, emphasizing software engineering best practices.",
-    technologies: ["React", "Git", "Agile"],
-  },
-  {
-    year: "Learning",
-    title: "Competitive Programming Journey",
-    description: "Began a rigorous journey solving hundreds of algorithmic challenges, achieving notable rankings in regional contests.",
-    technologies: ["C++", "Algorithms", "Data Structures"],
-  }
-];
-
-export const TECHNOLOGIES_DATA: TechnologyCategoryData[] = [
-  {
-    title: "Frontend",
-    technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-  },
-  {
-    title: "Backend",
-    technologies: ["Node.js", "Express"],
-  },
-  {
-    title: "Database",
-    technologies: ["MongoDB"],
-  },
-  {
-    title: "Languages",
-    technologies: ["TypeScript", "C++", "Java"],
-  },
-  {
-    title: "Tools & Methods",
-    technologies: ["Git", "Agile", "Algorithms", "Data Structures"],
-  },
-];
-
-export const PROJECTS_DATA = {
-  title: "Featured Projects",
+export const PROJECTS_HERO: ProjectsHeroData = {
+  heading: "Projects & Work",
   subtitle: "Showcasing my work in full-stack development, AI, and research.",
-  featuredProject: {
+  introCopy: "A collection of projects spanning various technologies and domains, demonstrating my ability to build scalable and maintainable solutions.",
+};
+
+export const FEATURED_PROJECT: FeaturedProjectData = {
+  title: "Featured Project",
+  subtitle: "Highlighting recent significant work.",
+  project: {
     id: "founderskick",
     title: "FoundersKick",
     description: "A full-stack networking platform designed to connect entrepreneurs, foster collaboration, and support startup communities.",
     imageSrc: "/projects/project_founderskick.png",
-    technologies: ["Next.js", "Node.js", "MongoDB", "Express"],
-    highlights: [
-      "Developed full-stack features to support user interactions.",
-      "Optimized database queries for efficient data retrieval.",
-      "Implemented secure authentication and user profiles."
+    technologies: [
+      { name: "Next.js" },
+      { name: "Node.js" },
+      { name: "MongoDB" },
+      { name: "Express" }
     ],
+    status: "Live",
     githubUrl: "https://github.com/Redeeyak1318/FoundersKick",
     liveUrl: "https://founderskick.com",
-    category: "Full-Stack Web App",
-    status: "Live",
-    timeline: "2023 - 2024",
-    impact: "Connected thousands of entrepreneurs.",
+    categoryId: "full-stack",
   },
-  projects: [
-    {
-      id: "redeeyak",
-      title: "Project REDEEYAK",
-      description: "A comprehensive personal portfolio platform showcasing my projects, skills, and research.",
-      imageSrc: "/projects/project_redeeyak.png",
-      technologies: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
-      highlights: [
-        "Built with modern Next.js App Router for optimal performance.",
-        "Features a dynamic, responsive design with dark mode support.",
-        "Showcases scalable component architecture."
-      ],
-      githubUrl: "https://github.com/Redeeyak1318/Project-REDEEYAK",
-      liveUrl: "https://project-redeeyak.vercel.app",
-    },
-    {
-      id: "eureeka",
-      title: "EUREEKA Internship",
-      description: "Contributions made during the EUREEKA internship, focusing on software engineering best practices.",
-      imageSrc: "/projects/project_eureeka.png",
-      technologies: ["React", "TypeScript", "Git", "Agile"],
-      highlights: [
-        "Collaborated with a cross-functional team in an agile environment.",
-        "Delivered production-ready features ahead of schedule.",
-        "Participated in code reviews and architecture planning."
-      ],
-      liveUrl: "https://eureekainstitute.com",
-    },
-    {
-      id: "cp-journey",
-      title: "Competitive Programming Journey",
-      description: "A continuous journey of solving algorithmic challenges and participating in programming contests.",
-      imageSrc: "/projects/project_cp_journey.png",
-      technologies: ["C++", "Java", "Algorithms", "Data Structures"],
-      highlights: [
-        "Solved 500+ algorithmic problems across various platforms.",
-        "Achieved notable rankings in regional coding competitions.",
-        "Deepened understanding of graph theory and dynamic programming."
-      ],
-      githubUrl: "https://github.com/Redeeyak1318/cp-solutions",
-    },
-  ] as Project[],
 };
 
-export const FUTURE_FOCUS_DATA: FutureFocus[] = [
+export const PROJECT_CATEGORIES: ProjectCategory[] = [
+  { id: "all", name: "All Projects" },
+  { id: "full-stack", name: "Full-Stack Web App" },
+  { id: "ai", name: "Artificial Intelligence" },
+  { id: "research", name: "Research" },
+];
+
+export const PROJECTS_GRID: Project[] = [
   {
-    title: "Artificial Intelligence",
-    description: "Exploring the integration of large language models and intelligent agents into practical, user-facing applications.",
-    icon: BrainCircuit,
-    tags: ["LLMs", "Agents", "LangChain"],
+    id: "redeeyak",
+    title: "Project REDEEYAK",
+    description: "A comprehensive personal portfolio platform showcasing my projects, skills, and research.",
+    imageSrc: "/projects/project_redeeyak.png",
+    technologies: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" }
+    ],
+    status: "Live",
+    githubUrl: "https://github.com/Redeeyak1318/Project-REDEEYAK",
+    liveUrl: "https://project-redeeyak.vercel.app",
+    categoryId: "full-stack",
   },
   {
-    title: "Systems Engineering",
-    description: "Designing robust microservices and serverless solutions that handle high traffic with graceful degradation.",
-    icon: Cpu,
-    tags: ["Microservices", "Serverless", "Edge Computing"],
+    id: "eureeka",
+    title: "EUREEKA Internship",
+    description: "Contributions made during the EUREEKA internship, focusing on software engineering best practices.",
+    imageSrc: "/projects/project_eureeka.png",
+    technologies: [
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Git" },
+      { name: "Agile" }
+    ],
+    status: "Completed",
+    liveUrl: "https://eureekainstitute.com",
+    categoryId: "full-stack",
   },
   {
-    title: "Open Source",
-    description: "Actively contributing to and maintaining open-source libraries to push the web development community forward.",
-    icon: Globe,
-    tags: ["OSS", "Community", "Collaboration"],
+    id: "cp-journey",
+    title: "Competitive Programming Journey",
+    description: "A continuous journey of solving algorithmic challenges and participating in programming contests.",
+    imageSrc: "/projects/project_cp_journey.png",
+    technologies: [
+      { name: "C++" },
+      { name: "Java" },
+      { name: "Algorithms" },
+      { name: "Data Structures" }
+    ],
+    status: "Completed",
+    githubUrl: "https://github.com/Redeeyak1318/cp-solutions",
+    categoryId: "research",
   },
 ];
 
-export const PROJECTS_CTA_DATA: ProjectsCTAData = {
+export const PROJECT_TIMELINE: ProjectsTimelineItem[] = [
+  {
+    id: "present",
+    year: "Present",
+    title: "Project REDEEYAK",
+    description: "Designed and continue to develop a modern personal portfolio platform showcasing projects, research, and technical expertise using Next.js and a scalable component architecture.",
+  },
+  {
+    id: "2026-founderskick",
+    year: "2026",
+    title: "FoundersKick Development",
+    description: "Architected and built a comprehensive full-stack networking platform to connect and empower entrepreneurs globally.",
+  },
+  {
+    id: "2026-eureeka",
+    year: "2026",
+    title: "EUREEKA Internship",
+    description: "Contributed to production-ready features in an agile team environment, emphasizing software engineering best practices.",
+  },
+  {
+    id: "learning",
+    year: "Learning",
+    title: "Competitive Programming Journey",
+    description: "Began a rigorous journey solving hundreds of algorithmic challenges, achieving notable rankings in regional contests.",
+  }
+];
+
+export const PROJECTS_CTA: ProjectsCTAData = {
   title: "Let's Build Something Great",
   description: "Have a project in mind or want to discuss potential collaborations? I'm always open to new opportunities and exciting challenges.",
   primaryAction: {
@@ -150,4 +130,11 @@ export const PROJECTS_CTA_DATA: ProjectsCTAData = {
   },
 };
 
-
+export const PROJECTS_SECTION = {
+  hero: PROJECTS_HERO,
+  featured: FEATURED_PROJECT,
+  categories: PROJECT_CATEGORIES,
+  projects: PROJECTS_GRID,
+  timeline: PROJECT_TIMELINE,
+  cta: PROJECTS_CTA,
+};

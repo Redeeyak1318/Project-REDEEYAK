@@ -1,37 +1,36 @@
-import type { LucideIcon } from "lucide-react";
+export type ProjectStatus = "Live" | "In Progress" | "Planned" | "Completed";
+
+export interface Technology {
+  name: string;
+}
+
+export interface ProjectCategory {
+  id: string;
+  name: string;
+}
 
 export interface Project {
   id: string;
   title: string;
   description: string;
   imageSrc: string;
-  technologies: string[];
-  highlights?: string[];
+  technologies: Technology[];
+  status?: ProjectStatus;
   githubUrl?: string;
   liveUrl?: string;
-  category?: string;
-  status?: string;
-  timeline?: string;
-  impact?: string;
+  categoryId?: string;
 }
 
-export interface TechnologyCategoryData {
+export interface FeaturedProjectData {
   title: string;
-  technologies: string[];
+  subtitle: string;
+  project: Project;
 }
 
-export interface TimelineEntry {
-  year: string;
-  title: string;
-  description: string;
-  technologies?: string[];
-}
-
-export interface FutureFocus {
-  title: string;
-  description: string;
-  icon: LucideIcon;
-  tags?: string[];
+export interface ProjectsHeroData {
+  heading: string;
+  subtitle: string;
+  introCopy: string;
 }
 
 export interface ProjectsCTAData {
@@ -41,8 +40,16 @@ export interface ProjectsCTAData {
     label: string;
     href: string;
   };
-  secondaryAction: {
+  secondaryAction?: {
     label: string;
     href: string;
   };
 }
+
+export interface ProjectsTimelineItem {
+  id: string;
+  year: string;
+  title: string;
+  description: string;
+}
+
