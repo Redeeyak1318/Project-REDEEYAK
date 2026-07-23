@@ -19,6 +19,7 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   categoryId?: string;
+  badge?: string;
 }
 
 export interface FeaturedProjectData {
