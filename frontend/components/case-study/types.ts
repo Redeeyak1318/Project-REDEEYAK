@@ -92,7 +92,7 @@ export interface CaseStudy {
   problem: ProblemStatementData;
   solution: SolutionOverviewData;
   architecture: TechnicalArchitectureData;
-  gallery: GalleryImage[];
+  gallery: ProjectGalleryData;
   technologies: Technology[];
   challenges: Challenge[];
   outcomes: Outcome[];
