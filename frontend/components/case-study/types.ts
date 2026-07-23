@@ -49,6 +49,11 @@ export interface GalleryImage {
   caption?: string;
 }
 
+export interface ProjectGalleryData {
+  title?: string;
+  images: GalleryImage[];
+}
+
 export interface Technology {
   name: string;
   icon?: ComponentType<{

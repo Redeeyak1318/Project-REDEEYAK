@@ -1,23 +1,31 @@
 import Image from "next/image";
-import { GalleryImage } from "../types";
+import { ProjectGalleryData } from "../types";
 
-export function ProjectGallery({ images }: { images: GalleryImage[] }) {
+export function ProjectGallery({
+  title,
+  images,
+}: ProjectGalleryData) {
   if (!images || images.length === 0) return null;
 
   return (
-    <section className="flex flex-col gap-8">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+    <section className="flex flex-col gap-8 max-w-4xl">
+      {title && (
+        <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-foreground">
+          {title}
+        </h2>
+      )}
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {images.map((image, index) => (
-          <figure key={index} className="flex flex-col gap-3">
-            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-2xl border bg-muted shadow-sm">
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover transition-transform duration-500 hover:scale-105"
-              />
-            </div>
+          <figure key={`gallery-image-${index}`} className="flex flex-col gap-3">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              width={600}
+              height={450}
+              loading="lazy"
+              className="w-full h-auto object-cover rounded-2xl border"
+            />
             {image.caption && (
               <figcaption className="text-sm text-muted-foreground px-2">
                 {image.caption}
