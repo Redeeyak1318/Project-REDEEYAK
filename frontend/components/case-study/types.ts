@@ -7,6 +7,12 @@ export interface CaseStudyHeroData {
   tags?: string[];
   liveUrl?: string;
   githubUrl?: string;
+  badge?: string;
+  introduction?: string;
+  duration?: string;
+  role?: string;
+  status?: string;
+  year?: string;
 }
 
 export interface ProjectOverviewData {
