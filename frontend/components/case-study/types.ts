@@ -94,8 +94,8 @@ export interface CaseStudy {
   architecture: TechnicalArchitectureData;
   gallery: ProjectGalleryData;
   technologies: TechnologyStackData;
-  challenges: Challenge[];
-  outcomes: Outcome[];
+  challenges: ChallengesSectionData;
+  outcomes: ProjectOutcomesData;
   navigation?: ProjectNavigationData;
 }
 
@@ -107,4 +107,9 @@ export interface TechnologyStackData {
 export interface ChallengesSectionData {
   title?: string;
   challenges: Challenge[];
+}
+
+export interface ProjectOutcomesData {
+  title?: string;
+  outcomes: Outcome[];
 }
