@@ -93,8 +93,13 @@ export interface CaseStudy {
   solution: SolutionOverviewData;
   architecture: TechnicalArchitectureData;
   gallery: ProjectGalleryData;
-  technologies: Technology[];
+  technologies: TechnologyStackData;
   challenges: Challenge[];
   outcomes: Outcome[];
   navigation?: ProjectNavigationData;
+}
+
+export interface TechnologyStackData {
+  title?: string;
+  technologies: Technology[];
 }
