@@ -103,3 +103,8 @@ export interface TechnologyStackData {
   title?: string;
   technologies: Technology[];
 }
+
+export interface ChallengesSectionData {
+  title?: string;
+  challenges: Challenge[];
+}
