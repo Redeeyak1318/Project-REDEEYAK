@@ -4,3 +4,4 @@ export * from "./skills";
 export * from "./experience";
 export * from "./projects";
 export * from "./contact";
+export * from "./timeline";
