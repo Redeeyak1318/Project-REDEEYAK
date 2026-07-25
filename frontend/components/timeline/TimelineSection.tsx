@@ -13,7 +13,7 @@ export function TimelineSection({ title, items }: TimelineSectionData) {
           {title}
         </h2>
       )}
-      <ol className="flex flex-col gap-8">
+      <ol className="flex flex-col">
         {items.map((item) => (
           <TimelineItem key={item.id} {...item} />
         ))}
