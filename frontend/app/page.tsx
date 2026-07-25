@@ -2,6 +2,13 @@ import dynamic from "next/dynamic";
 import { Hero } from "@/components/hero/Hero";
 import { About } from "@/components/about/About";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const Experience = dynamic(() => import("@/components/experience/Experience").then((mod) => mod.Experience));
 const Timeline = dynamic(() => import("@/components/timeline/Timeline").then((mod) => mod.Timeline));
