@@ -24,6 +24,9 @@ export interface Project {
   githubUrl?: string;
   liveUrl?: string;
   categoryId?: string;
+  category?: string;
+  timeline?: string;
+  highlights?: string[];
   badge?: string;
 }
 
@@ -57,5 +60,6 @@ export interface ProjectsTimelineItem {
   year: string;
   title: string;
   description: string;
+  technologies?: Technology[];
 }
 

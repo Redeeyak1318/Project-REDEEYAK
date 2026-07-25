@@ -19,8 +19,8 @@ export const FeaturedContent = ({ project }: { project: Project }) => {
       
       <div className="flex flex-wrap gap-2 mt-4">
         {project.technologies.map((tech) => (
-          <Badge key={tech} variant="secondary">
-            {tech}
+          <Badge key={tech.name} variant="secondary">
+            {tech.name}
           </Badge>
         ))}
       </div>

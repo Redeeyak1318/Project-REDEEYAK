@@ -43,8 +43,8 @@ export const ProjectCard = ({ project, className, ...props }: ProjectCardProps) 
 
       <div className="flex flex-wrap gap-2">
         {technologies.map((tech) => (
-          <Badge key={`${title}-${tech}`} variant="secondary">
-            {tech}
+          <Badge key={`${title}-${tech.name}`} variant="secondary">
+            {tech.name}
           </Badge>
         ))}
       </div>

@@ -1,10 +1,10 @@
 import * as React from "react";
-import { TimelineEntry } from "../types";
+import { ProjectsTimelineItem } from "../types";
 import { Badge } from "@/components/ui/badge";
 import { TimelineConnector } from "./TimelineConnector";
 
 interface TimelineItemProps {
-  entry: TimelineEntry;
+  entry: ProjectsTimelineItem;
   isLast?: boolean;
 }
 
@@ -31,8 +31,8 @@ export const TimelineItem = ({ entry, isLast }: TimelineItemProps) => {
         {entry.technologies && entry.technologies.length > 0 && (
           <div className="flex flex-wrap gap-2 mt-2">
             {entry.technologies.map((tech) => (
-              <Badge key={tech} variant="secondary">
-                {tech}
+              <Badge key={tech.name} variant="secondary">
+                {tech.name}
               </Badge>
             ))}
           </div>

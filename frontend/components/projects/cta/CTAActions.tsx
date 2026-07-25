@@ -13,14 +13,16 @@ export const CTAActions = ({ ctaData }: { ctaData: ProjectsCTAData }) => {
       >
         {ctaData.primaryAction.label}
       </Button>
-      <Button 
-        variant="outline" 
-        size="lg" 
-        className="w-full sm:w-auto"
-        render={<Link href={ctaData.secondaryAction.href} />}
-      >
-        {ctaData.secondaryAction.label}
-      </Button>
+      {ctaData.secondaryAction && (
+        <Button 
+          variant="outline" 
+          size="lg" 
+          className="w-full sm:w-auto"
+          render={<Link href={ctaData.secondaryAction.href} />}
+        >
+          {ctaData.secondaryAction.label}
+        </Button>
+      )}
     </div>
   );
 };

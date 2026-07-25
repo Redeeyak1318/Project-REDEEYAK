@@ -37,27 +37,27 @@ export function ProjectCaseStudy({ caseStudy }: { caseStudy: CaseStudy }) {
         <TechnicalArchitecture {...caseStudy.architecture} />
       </ScrollReveal>
 
-      {caseStudy.gallery && caseStudy.gallery.length > 0 && (
+      {caseStudy.gallery && caseStudy.gallery.images?.length > 0 && (
         <ScrollReveal delay={150}>
-          <ProjectGallery images={caseStudy.gallery} />
+          <ProjectGallery {...caseStudy.gallery} />
         </ScrollReveal>
       )}
 
-      {caseStudy.technologies && caseStudy.technologies.length > 0 && (
+      {caseStudy.technologies && caseStudy.technologies.technologies?.length > 0 && (
         <ScrollReveal delay={150}>
-          <TechnologyStack technologies={caseStudy.technologies} />
+          <TechnologyStack {...caseStudy.technologies} />
         </ScrollReveal>
       )}
 
-      {caseStudy.challenges && caseStudy.challenges.length > 0 && (
+      {caseStudy.challenges && caseStudy.challenges.challenges?.length > 0 && (
         <ScrollReveal delay={150}>
-          <ChallengesSection challenges={caseStudy.challenges} />
+          <ChallengesSection {...caseStudy.challenges} />
         </ScrollReveal>
       )}
 
-      {caseStudy.outcomes && caseStudy.outcomes.length > 0 && (
+      {caseStudy.outcomes && caseStudy.outcomes.outcomes?.length > 0 && (
         <ScrollReveal delay={150}>
-          <ProjectOutcomes outcomes={caseStudy.outcomes} />
+          <ProjectOutcomes {...caseStudy.outcomes} />
         </ScrollReveal>
       )}
 
