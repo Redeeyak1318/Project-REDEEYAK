@@ -34,35 +34,43 @@ export const CASE_STUDY_DATA: CaseStudy = {
     title: "Technical Architecture",
     description: "The application relies on a modern serverless architecture powered by Next.js App Router and a robust headless CMS.",
   },
-  gallery: [
-    { src: "/images/gallery-1.jpg", alt: "Dashboard View", caption: "Main user dashboard." },
-    { src: "/images/gallery-2.jpg", alt: "Task Detail", caption: "Detailed view of a single task." },
-  ],
-  technologies: [
-    { name: "Next.js" },
-    { name: "React" },
-    { name: "TypeScript" },
-    { name: "Tailwind CSS" },
-  ],
-  challenges: [
-    {
-      id: "c1",
-      title: "Real-time Synchronization",
-      description: "Ensuring all clients see state changes immediately without refreshing.",
-      solution: "Implemented WebSockets with a robust fallback polling mechanism.",
-    },
-  ],
-  outcomes: [
-    {
-      id: "o1",
-      metric: "30%",
-      description: "Increase in team productivity reported by early adopters.",
-    },
-    {
-      id: "o2",
-      description: "Successfully launched MVP ahead of schedule.",
-    },
-  ],
+  gallery: {
+    images: [
+      { src: "/images/gallery-1.jpg", alt: "Dashboard View", caption: "Main user dashboard." },
+      { src: "/images/gallery-2.jpg", alt: "Task Detail", caption: "Detailed view of a single task." },
+    ],
+  },
+  technologies: {
+    technologies: [
+      { name: "Next.js" },
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  challenges: {
+    challenges: [
+      {
+        id: "c1",
+        title: "Real-time Synchronization",
+        description: "Ensuring all clients see state changes immediately without refreshing.",
+        solution: "Implemented WebSockets with a robust fallback polling mechanism.",
+      },
+    ],
+  },
+  outcomes: {
+    outcomes: [
+      {
+        id: "o1",
+        metric: "30%",
+        description: "Increase in team productivity reported by early adopters.",
+      },
+      {
+        id: "o2",
+        description: "Successfully launched MVP ahead of schedule.",
+      },
+    ],
+  },
   navigation: {
     previousProject: { title: "Project Beta", href: "/projects/beta" },
     nextProject: { title: "Project Gamma", href: "/projects/gamma" },

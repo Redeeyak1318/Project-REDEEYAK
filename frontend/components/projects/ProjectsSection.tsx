@@ -1,10 +1,12 @@
+import dynamic from "next/dynamic";
 import { Container } from "@/components/layout";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { ProjectsHero } from "./hero";
-import { FeaturedProject } from "./featured";
-import { ProjectTimeline } from "./timeline";
-import { ProjectsCTA } from "./cta";
-import { ProjectsFilterContainer } from "./ProjectsFilterContainer";
+
+const FeaturedProject = dynamic(() => import("./featured").then((mod) => mod.FeaturedProject));
+const ProjectTimeline = dynamic(() => import("./timeline").then((mod) => mod.ProjectTimeline));
+const ProjectsCTA = dynamic(() => import("./cta").then((mod) => mod.ProjectsCTA));
+const ProjectsFilterContainer = dynamic(() => import("./ProjectsFilterContainer").then((mod) => mod.ProjectsFilterContainer));
 
 import {
   PROJECTS_HERO,
