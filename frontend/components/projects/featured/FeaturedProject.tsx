@@ -72,7 +72,6 @@ export function FeaturedProject({ title, subtitle, project }: FeaturedProjectDat
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
                 className="object-cover transition-transform duration-500 group-hover:scale-105"
-                priority
               />
             ) : (
               <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">

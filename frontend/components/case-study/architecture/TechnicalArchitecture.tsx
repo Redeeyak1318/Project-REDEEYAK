@@ -27,6 +27,7 @@ export function TechnicalArchitecture({
             width={1200}
             height={800}
             loading="lazy"
+            sizes="(max-width: 1200px) 100vw, 1200px"
             className="w-full h-auto rounded-2xl border object-contain"
           />
         )}

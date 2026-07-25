@@ -24,6 +24,7 @@ export function ProjectGallery({
               width={600}
               height={450}
               loading="lazy"
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="w-full h-auto object-cover rounded-2xl border"
             />
             {image.caption && (
