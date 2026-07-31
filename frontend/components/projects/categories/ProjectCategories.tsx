@@ -18,7 +18,7 @@ function CategoryCard({
       type="button"
       onClick={onClick}
       aria-pressed={isActive}
-      className={`flex h-full w-full flex-col items-start justify-start gap-3 whitespace-normal rounded-xl border p-5 text-left transition-colors duration-300 ${isActive
+      className={`flex h-full w-full flex-col items-start justify-start gap-3 whitespace-normal rounded-xl border p-5 text-left ${isActive
           ? "border-primary/20 bg-primary/5 hover:bg-primary/10 shadow-sm"
           : "border-border bg-card hover:bg-accent/20"
         }`}

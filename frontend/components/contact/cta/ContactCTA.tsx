@@ -18,7 +18,7 @@ export const ContactCTA = ({
     <div
       aria-labelledby="contact-cta-heading"
       className={cn(
-        "relative overflow-hidden rounded-3xl border border-border/50 bg-card/80 p-8 sm:p-10 lg:p-12 text-center backdrop-blur-sm shadow-sm transition-all duration-300 hover:border-border/80 hover:shadow-md motion-reduce:transition-none flex flex-col items-center gap-6 lg:gap-8",
+        "relative overflow-hidden rounded-3xl border border-border/50 bg-card/80 p-8 sm:p-10 lg:p-12 text-center backdrop-blur-sm shadow-sm transition-all duration-300 ease-out hover:scale-[1.02] hover:border-border/80 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:scale-100 flex flex-col items-center gap-6 lg:gap-8",
         className
       )}
       {...props}

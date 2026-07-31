@@ -12,7 +12,7 @@ export const PhilosophyCard = ({ principle, className, ...props }: PhilosophyCar
   return (
     <div 
       className={cn(
-        "flex flex-col gap-4 p-6 sm:p-8 rounded-2xl bg-card border border-border/50 transition-colors hover:bg-muted/50",
+        "flex flex-col gap-4 p-6 sm:p-8 rounded-2xl bg-card border border-border/50",
         className
       )} 
       {...props}

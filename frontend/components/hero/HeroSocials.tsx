@@ -1,6 +1,7 @@
 import * as React from "react";
 import { HERO_DATA } from "./constants";
 import { cn } from "@/lib/utils";
+import { Button } from "@/components/ui/button";
 
 export interface HeroSocialsProps extends React.HTMLAttributes<HTMLDivElement> { }
 
@@ -21,16 +22,22 @@ export const HeroSocials = ({ className, ...props }: HeroSocialsProps) => {
         const Icon = social.icon;
 
         return (
-          <a
+          <Button
             key={social.label}
-            href={social.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={social.label}
-            className="inline-flex h-10 w-10 items-center justify-center rounded-full transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+            variant="ghost"
+            size="icon"
+            className="rounded-full h-10 w-10"
+            render={
+              <a
+                href={social.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={social.label}
+              />
+            }
           >
             <Icon className="h-5 w-5" aria-hidden="true" />
-          </a>
+          </Button>
         );
       })}
     </div>
