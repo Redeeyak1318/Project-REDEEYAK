@@ -15,7 +15,7 @@ export const HeroContent = ({ className, ...props }: HeroContentProps) => {
         <AvailabilityBadge text={HERO_DATA.badge} />
       </ScrollReveal>
 
-      <ScrollReveal delay={150}>
+      <ScrollReveal delay={0}>
         <header className="flex flex-col gap-4">
           <div className="flex flex-col gap-2">
             <p className="text-lg sm:text-xl font-medium text-primary tracking-wide">
@@ -40,14 +40,14 @@ export const HeroContent = ({ className, ...props }: HeroContentProps) => {
       </ScrollReveal>
 
       {HERO_DATA.description ? (
-        <ScrollReveal delay={300}>
+        <ScrollReveal delay={150}>
           <p className="text-lg sm:text-xl text-foreground/80 leading-relaxed">
             {HERO_DATA.description}
           </p>
         </ScrollReveal>
       ) : null}
 
-      <ScrollReveal delay={450}>
+      <ScrollReveal delay={300}>
         <div className="flex flex-col gap-6 pt-4">
           <HeroActions />
           <HeroSocials />

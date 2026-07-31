@@ -7,7 +7,7 @@ export const HeroStats = ({ className, ...props }: React.HTMLAttributes<HTMLDivE
   if (!RESEARCH_HERO.stats || RESEARCH_HERO.stats.length === 0) return null;
 
   return (
-    <ScrollReveal delay={600}>
+    <ScrollReveal delay={300}>
       <div className={cn("flex flex-wrap gap-8 pt-8", className)} {...props}>
         {RESEARCH_HERO.stats.map((stat, i) => (
           <div key={i} className="flex flex-col gap-1">

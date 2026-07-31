@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 
 export const HeroDescription = ({ className, ...props }: React.HTMLAttributes<HTMLParagraphElement>) => {
   return (
-    <ScrollReveal delay={300}>
+    <ScrollReveal delay={150}>
       <p className={cn("text-lg sm:text-xl text-foreground/80 leading-relaxed max-w-2xl", className)} {...props}>
         {RESEARCH_HERO.description}
       </p>

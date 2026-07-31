@@ -29,7 +29,7 @@ export const Hero = ({
           </div>
 
           <div>
-            <ScrollReveal delay={200} direction="left">
+            <ScrollReveal delay={150} direction="left">
               <HeroImage />
             </ScrollReveal>
           </div>

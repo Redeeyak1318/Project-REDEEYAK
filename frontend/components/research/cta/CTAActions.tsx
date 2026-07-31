@@ -8,7 +8,7 @@ import Link from "next/link";
 
 export const CTAActions = ({ className, ...props }: React.HTMLAttributes<HTMLDivElement>) => {
   return (
-    <ScrollReveal delay={200}>
+    <ScrollReveal delay={150}>
       <div className={cn("flex flex-wrap justify-center gap-4 w-full", className)} {...props}>
         {RESEARCH_CTA.actions.map((action) => (
           <Button

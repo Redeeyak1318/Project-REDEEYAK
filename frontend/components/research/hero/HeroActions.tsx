@@ -9,7 +9,7 @@ export const HeroActions = ({ className, ...props }: React.HTMLAttributes<HTMLDi
   if (!RESEARCH_HERO.actions || RESEARCH_HERO.actions.length === 0) return null;
 
   return (
-    <ScrollReveal delay={450}>
+    <ScrollReveal delay={300}>
       <div className={cn("pt-4 flex flex-wrap gap-4", className)} {...props}>
         {RESEARCH_HERO.actions.map((action, i) => (
           <Button
