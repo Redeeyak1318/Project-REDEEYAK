@@ -31,7 +31,7 @@ export const ContactHero = ({ className, ...props }: ContactHeroProps) => {
           {status && (
             <div className="inline-flex items-center gap-2 rounded-full border border-emerald-500/20 bg-emerald-500/10 px-3.5 py-1.5 text-xs sm:text-sm font-medium text-emerald-600 dark:text-emerald-400">
               <span
-                className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"
+                className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse motion-reduce:animate-none"
                 aria-hidden="true"
               />
               <span className="capitalize">{status}</span>

@@ -14,7 +14,7 @@ export const ProjectCard = ({ project, className, ...props }: ProjectCardProps) 
 
   return (
     <div
-      className={cn("group/card flex flex-col h-full gap-6 rounded-xl border bg-card p-5 sm:p-6 shadow-sm transition-all duration-300 ease-out hover:scale-[1.02] hover:shadow-md hover:border-border/80 motion-reduce:transition-none motion-reduce:hover:scale-100", className)}
+      className={cn("group/card flex flex-col h-full gap-6 rounded-xl border bg-card p-5 sm:p-6 shadow-sm transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:shadow-md hover:border-border/80 motion-reduce:transition-none motion-reduce:hover:scale-100", className)}
       {...props}
     >
       <div className="overflow-hidden rounded-md border">
@@ -23,7 +23,7 @@ export const ProjectCard = ({ project, className, ...props }: ProjectCardProps) 
           alt={`Screenshot of ${title}`}
           width={800}
           height={450}
-          className="h-auto w-full object-cover transition-transform duration-500 group-hover/card:scale-105"
+          className="h-auto w-full object-cover transition-transform motion-reduce:transition-none duration-500 group-hover/card:scale-105"
           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
         />
       </div>

@@ -12,7 +12,7 @@ export const ContactForm = ({ className, ...props }: ContactFormProps) => {
   return (
     <div
       className={cn(
-        "rounded-3xl border border-border/50 bg-card p-6 sm:p-8 lg:p-10 shadow-sm transition-all hover:shadow-md",
+        "rounded-3xl border border-border/50 bg-card p-6 sm:p-8 lg:p-10 shadow-sm transition-all motion-reduce:transition-none hover:shadow-md",
         className
       )}
       {...props}

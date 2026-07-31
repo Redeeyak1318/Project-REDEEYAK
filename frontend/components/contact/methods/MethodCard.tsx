@@ -25,7 +25,7 @@ export const MethodCard = ({ method, className, ...props }: MethodCardProps) => 
   return (
     <div
       className={cn(
-        "group relative flex flex-col justify-between gap-6 p-6 sm:p-8 rounded-2xl bg-card border border-border/50 transition-all duration-300 ease-out hover:scale-[1.02] hover:border-border/80 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:scale-100",
+        "group relative flex flex-col justify-between gap-6 p-6 sm:p-8 rounded-2xl bg-card border border-border/50 transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:border-border/80 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:scale-100",
         className
       )}
       {...props}
@@ -87,7 +87,7 @@ export const MethodCard = ({ method, className, ...props }: MethodCardProps) => 
             >
               <span>Connect</span>
               {isExternal && (
-                <ArrowUpRight className="ml-1.5 h-3.5 w-3.5 transition-transform group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
+                <ArrowUpRight className="ml-1.5 h-3.5 w-3.5 transition-transform motion-reduce:transition-none group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
               )}
             </Button>
           </div>

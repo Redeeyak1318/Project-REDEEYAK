@@ -14,7 +14,7 @@ export function ProjectCard({ project }: { project: Project }) {
             alt={`Preview of ${project.title}`}
             fill
             sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="object-cover transition-transform duration-500 group-hover:scale-105"
+            className="object-cover transition-transform motion-reduce:transition-none duration-500 motion-safe:group-hover:scale-105"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center text-muted-foreground bg-secondary/20">

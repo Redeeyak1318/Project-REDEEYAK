@@ -53,7 +53,7 @@ export const CTAButtons = ({
             size="lg"
             variant={primary ? "default" : "outline"}
             className={cn(
-              "w-full sm:w-auto px-6 font-medium group/btn transition-all duration-200",
+              "w-full sm:w-auto px-6 font-medium group/btn transition-all motion-reduce:transition-none duration-200",
               primary && "shadow-sm hover:shadow"
             )}
             render={
@@ -70,11 +70,11 @@ export const CTAButtons = ({
             }
           >
             {primary && (
-              <Mail className="mr-2 h-4 w-4 transition-transform group-hover/btn:scale-110" />
+              <Mail className="mr-2 h-4 w-4 transition-transform motion-reduce:transition-none group-hover/btn:scale-110" />
             )}
             <span>{label}</span>
             {isExternal && (
-              <ArrowUpRight className="ml-1.5 h-4 w-4 transition-transform group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
+              <ArrowUpRight className="ml-1.5 h-4 w-4 transition-transform motion-reduce:transition-none group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
             )}
           </Button>
         );

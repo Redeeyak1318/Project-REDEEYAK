@@ -67,7 +67,7 @@ export const ScrollReveal = ({
     <div
       ref={ref}
       className={cn(
-        "transition-all ease-out motion-reduce:transition-none motion-reduce:translate-none motion-reduce:opacity-100",
+        "transition-all motion-reduce:transition-none ease-out motion-reduce:transition-none motion-reduce:translate-x-0 motion-reduce:translate-y-0 motion-reduce:opacity-100",
         getDirectionClass(),
         className
       )}

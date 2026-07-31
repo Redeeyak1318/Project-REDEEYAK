@@ -19,7 +19,7 @@ export const HeroActions = ({ className, ...props }: React.HTMLAttributes<HTMLDi
             className={cn("rounded-full font-medium px-8", action.primary && "group")}
           >
             {action.label}
-            {action.primary && <ArrowRight className="ml-2 w-4 h-4 transition-transform group-hover:translate-x-1" />}
+            {action.primary && <ArrowRight className="ml-2 w-4 h-4 transition-transform motion-reduce:transition-none group-hover:translate-x-1" />}
           </Button>
         ))}
       </div>
