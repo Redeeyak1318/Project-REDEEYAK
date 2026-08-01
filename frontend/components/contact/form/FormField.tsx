@@ -7,10 +7,12 @@ import type { FormFieldConfig } from "../types";
 export interface FormFieldProps extends React.HTMLAttributes<HTMLDivElement> {
   field: FormFieldConfig;
   error?: string;
+  value?: string;
+  onFieldChange?: (id: string, value: string) => void;
 }
 
 export const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
-  ({ className, field, error, ...props }, ref) => {
+  ({ className, field, error, value, onFieldChange, ...props }, ref) => {
     const {
       id,
       label,
@@ -21,6 +23,12 @@ export const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
       component = "input",
       rows = 5,
     } = field;
+
+    const handleChange = (
+      e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    ) => {
+      onFieldChange?.(id, e.target.value);
+    };
 
     return (
       <div ref={ref} className={cn("flex flex-col gap-2", className)} {...props}>
@@ -43,6 +51,8 @@ export const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
             aria-required={required}
             aria-invalid={!!error}
             aria-describedby={error ? `${id}-error` : undefined}
+            value={value}
+            onChange={handleChange}
           />
         ) : (
           <Input
@@ -55,6 +65,8 @@ export const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
             aria-required={required}
             aria-invalid={!!error}
             aria-describedby={error ? `${id}-error` : undefined}
+            value={value}
+            onChange={handleChange}
           />
         )}
         {error && (
@@ -71,3 +83,4 @@ export const FormField = React.forwardRef<HTMLDivElement, FormFieldProps>(
   }
 );
 FormField.displayName = "FormField";
+

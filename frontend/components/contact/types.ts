@@ -99,7 +99,7 @@ export interface ContactCardProps extends AnchorHTMLAttributes<HTMLAnchorElement
 }
 
 export interface SubmitButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  status?: "idle" | "loading" | "success" | "disabled";
+  status?: "idle" | "loading" | "success" | "error" | "disabled";
   children?: ReactNode;
 }
 
