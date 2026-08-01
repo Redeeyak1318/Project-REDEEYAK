@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Container } from "@/components/layout";
 import { cn } from "@/lib/utils";
-import { ScrollReveal } from "@/components/ui/scroll-reveal";
+
 
 import { ContactHeader as ContactHero } from "./hero";
 import { ContactCards as ContactMethods } from "./methods";
@@ -19,7 +19,6 @@ export const ContactSection = ({ className, ...props }: ContactSectionProps) => 
             {...props}
         >
             <Container>
-                <ScrollReveal>
                     <div className="flex flex-col gap-12 lg:gap-16">
                         <ContactHero />
                         <div className="flex flex-col gap-12">
@@ -32,7 +31,6 @@ export const ContactSection = ({ className, ...props }: ContactSectionProps) => 
                             <ContactCTA />
                         </div>
                     </div>
-                </ScrollReveal>
             </Container>
         </section>
     );

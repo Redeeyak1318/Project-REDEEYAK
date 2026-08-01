@@ -16,7 +16,7 @@ export const ExperienceCard = ({ experience, className, ...props }: ExperienceCa
   return (
     <div
       className={cn(
-        "group/card flex flex-col gap-6 rounded-xl border bg-card p-6 shadow-sm transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:shadow-md hover:border-border/80 motion-reduce:transition-none motion-reduce:hover:scale-100",
+        "group/card flex flex-col gap-6 rounded-xl border bg-card p-6 shadow-sm transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:shadow-md hover:border-border/80 motion-reduce:hover:scale-100",
         className
       )}
       {...props}

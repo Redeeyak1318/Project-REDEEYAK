@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export function ProjectCard({ project }: { project: Project }) {
   return (
-    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border bg-card text-card-foreground transition-colors">
+    <article className="group relative flex h-full flex-col overflow-hidden rounded-2xl border bg-card text-card-foreground transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:shadow-md hover:border-border/80 motion-reduce:hover:scale-100">
       {/* Image Container */}
       <div className="relative aspect-video w-full overflow-hidden border-b bg-muted transition-colors">
         {project.imageSrc ? (

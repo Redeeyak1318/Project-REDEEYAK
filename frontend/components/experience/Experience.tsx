@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 import { Container } from "@/components/layout";
 import { ExperienceHeader } from "./ExperienceHeader";
 import { ExperienceTimeline } from "./ExperienceTimeline";
-import { ScrollReveal } from "@/components/ui/scroll-reveal";
+
 
 import { ProfessionalExperience } from "./professional";
 import { ResearchExperience } from "./research";
@@ -21,7 +21,6 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
       {...props}
     >
       <Container>
-        <ScrollReveal>
           <div className="flex flex-col gap-12 lg:gap-16">
             <ExperienceHeader />
             <ExperienceTimeline />
@@ -30,7 +29,6 @@ export const Experience = ({ className, ...props }: ExperienceProps) => {
             <LeadershipExperience />
             <ExperienceReflection />
           </div>
-        </ScrollReveal>
       </Container>
     </section>
   );

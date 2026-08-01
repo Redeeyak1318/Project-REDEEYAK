@@ -28,8 +28,8 @@ export const ThemeToggle = () => {
       aria-label="Toggle theme"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
     >
-      <Sun className="h-5 w-5 dark:hidden transition-transform motion-reduce:transition-none duration-500 hover:rotate-90 motion-reduce:transition-none motion-reduce:hover:rotate-0" />
-      <Moon className="hidden h-5 w-5 dark:block transition-transform motion-reduce:transition-none duration-500 hover:-rotate-12 motion-reduce:transition-none motion-reduce:hover:rotate-0" />
+      <Sun className="h-5 w-5 dark:hidden transition-transform motion-reduce:transition-none duration-500 hover:rotate-90 motion-reduce:hover:rotate-0" />
+      <Moon className="hidden h-5 w-5 dark:block transition-transform motion-reduce:transition-none duration-500 hover:-rotate-12 motion-reduce:hover:rotate-0" />
     </Button>
   );
 };

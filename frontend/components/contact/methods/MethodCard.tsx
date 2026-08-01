@@ -25,7 +25,7 @@ export const MethodCard = ({ method, className, ...props }: MethodCardProps) => 
   return (
     <div
       className={cn(
-        "group relative flex flex-col justify-between gap-6 p-6 sm:p-8 rounded-2xl bg-card border border-border/50 transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:border-border/80 hover:shadow-md motion-reduce:transition-none motion-reduce:hover:scale-100",
+        "group relative flex flex-col justify-between gap-6 p-6 sm:p-8 rounded-2xl bg-card border border-border/50 transition-all motion-reduce:transition-none duration-300 ease-out motion-safe:hover:scale-[1.02] hover:border-border/80 hover:shadow-md motion-reduce:hover:scale-100",
         className
       )}
       {...props}
