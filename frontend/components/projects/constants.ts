@@ -127,11 +127,11 @@ export const PROJECTS_CTA: ProjectsCTAData = {
   description: "Have a project in mind or want to discuss potential collaborations? I'm always open to new opportunities and exciting challenges.",
   primaryAction: {
     label: "Get in Touch",
-    href: "/contact",
+    href: "/#contact",
   },
   secondaryAction: {
     label: "View Experience",
-    href: "/experience",
+    href: "/#experience",
   },
 };
 
